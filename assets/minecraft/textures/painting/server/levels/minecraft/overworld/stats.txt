@@ -1,0 +1,7 @@
+spawning_chunks: 368
+entities: 954,954,40,1743,1743,0,0
+block_entity_tickers: 0
+block_ticks: 0
+fluid_ticks: 0
+distance_manager: player ticket throttler=[], s=1
+pending_tasks: 1

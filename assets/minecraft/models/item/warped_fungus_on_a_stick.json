@@ -1,0 +1,39 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/warped_fungus_on_a_stick"
+    },
+
+    "display": {
+		"firstperson_righthand": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1]
+		}
+	},
+
+    "overrides": [
+	{ "predicate": { "custom_model_data": 0 }, "model": "item/item_slot/empty" },
+        { "predicate": { "custom_model_data": 1 }, "model": "item/item_slot/mushroom" },
+        { "predicate": { "custom_model_data": 2 }, "model": "item/item_slot/green_shell"},
+        { "predicate": { "custom_model_data": 3 }, "model": "item/item_slot/red_shell"},
+        { "predicate": { "custom_model_data": 4 }, "model": "item/item_slot/blue_shell"},
+        { "predicate": { "custom_model_data": 5 }, "model": "item/item_slot/boo"},
+        { "predicate": { "custom_model_data": 6 }, "model": "item/item_slot/bullet_bill"},
+        { "predicate": { "custom_model_data": 7 }, "model": "item/item_slot/star"},
+        { "predicate": { "custom_model_data": 8 }, "model": "item/item_slot/banana"},
+        { "predicate": { "custom_model_data": 9 }, "model": "item/item_slot/bomb_omb"},
+        { "predicate": { "custom_model_data": 10 }, "model": "item/item_slot/thunder"},
+        { "predicate": { "custom_model_data": 11 }, "model": "item/item_slot/bloups"},
+        { "predicate": { "custom_model_data": 12 }, "model": "item/item_slot/double_green_shell"},
+        { "predicate": { "custom_model_data": 13 }, "model": "item/item_slot/triple_green_shell"},
+        { "predicate": { "custom_model_data": 14 }, "model": "item/item_slot/double_red_shell"},
+        { "predicate": { "custom_model_data": 15 }, "model": "item/item_slot/triple_red_shell"},
+        { "predicate": { "custom_model_data": 16 }, "model": "item/item_slot/double_mushroom"},
+        { "predicate": { "custom_model_data": 17 }, "model": "item/item_slot/triple_mushroom"},
+        { "predicate": { "custom_model_data": 18 }, "model": "item/item_slot/double_banana"},
+        { "predicate": { "custom_model_data": 19 }, "model": "item/item_slot/triple_banana"},
+        { "predicate": { "custom_model_data": 20 }, "model": "item/item_slot/golden_mushroom"}
+
+	]
+}

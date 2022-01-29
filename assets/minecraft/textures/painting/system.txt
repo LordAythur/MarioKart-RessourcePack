@@ -1,0 +1,29 @@
+Minecraft Version: 1.17
+Minecraft Version ID: 1.17
+Operating System: Linux (amd64) version 4.9.0-15-amd64
+Java Version: 16.0.1, AdoptOpenJDK
+Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
+Memory: 451953696 bytes (431 MiB) / 866250752 bytes (826 MiB) up to 3113877504 bytes (2969 MiB)
+CPUs: 2
+Processor Vendor: AuthenticAMD
+Processor Name: AMD Ryzen 9 3900X 12-Core Processor
+Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+Microarchitecture: Zen 2
+Frequency (GHz): -0.00
+Number of physical packages: 1
+Number of physical CPUs: 12
+Number of logical CPUs: 24
+Graphics card #0 name: unknown
+Graphics card #0 vendor: unknown
+Graphics card #0 VRAM (MB): 0.00
+Graphics card #0 deviceId: unknown
+Graphics card #0 versionInfo: unknown
+Virtual memory max (MB): 163025.94
+Virtual memory used (MB): 80638.41
+Swap memory total (MB): 98557.00
+Swap memory used (MB): 0.00
+JVM Flags: 3 total; -XX:+UseSerialGC -Xmx3072M -Xms512M
+Player Count: 2 / 999; [abs['JrsArthur'/66759, l='ServerLevel[Vide]', x=982.15, y=105.00, z=1009.48], abs['COOL_BEAR'/84455, l='ServerLevel[Vide]', x=1019.25, y=114.63, z=969.57]]
+Data Packs: vanilla, file/MK
+Is Modded: Unknown (can't tell)
+Type: Dedicated Server (map_server.txt)

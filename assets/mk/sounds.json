@@ -1,0 +1,59 @@
+{
+    "music.champignon": { "category": "neutral", "sounds": [{ "name": "mk:music/royaume_champignon", "stream": true }]},
+    "music.arc_en_ciel": { "category": "neutral", "sounds": [{ "name": "mk:music/route_arc_en_ciel", "stream": true }]},
+    "music.stade": { "category": "neutral", "sounds": [{ "name": "mk:music/stade_waluigi", "stream": true }]},
+    "music.prairie": { "category": "neutral", "sounds": [{ "name": "mk:music/prairie_meuhmeuh", "stream": true }]},
+    "music.champignon2": { "category": "neutral", "sounds": [{ "name": "mk:music/royaume_champignon2", "stream": true }]},
+    "music.arc_en_ciel2": { "category": "neutral", "sounds": [{ "name": "mk:music/route_arc_en_ciel2", "stream": true }]},
+    "music.stade2": { "category": "neutral", "sounds": [{ "name": "mk:music/stade_waluigi2", "stream": true }]},
+    "music.prairie2": { "category": "neutral", "sounds": [{ "name": "mk:music/prairie_meuhmeuh2", "stream": true }]},
+    "music.result": { "category": "neutral", "sounds": [{ "name": "mk:music/result", "stream": true }]},
+    "music.title": { "category": "neutral", "sounds": [{ "name": "mk:music/title", "stream": true }]},
+    "music.menu": { "category": "neutral", "sounds": [{ "name": "mk:music/menu", "stream": true }]},
+    "music.trophy": { "category": "neutral", "sounds": [{ "name": "mk:music/trophy", "stream": true }]},
+    "music.no_trophy": { "category": "neutral", "sounds": [{ "name": "mk:music/no_trophy", "stream": true }]},
+
+    "item.green_shell": { "category": "neutral", "sounds": [{ "name": "mk:items/green_shell", "stream": true }]},
+    "item.green_shell_kick": { "category": "neutral", "sounds": [{ "name": "mk:items/green_shell_kick", "stream": true }]},
+    "item.red_shell": { "category": "neutral", "sounds": [{ "name": "mk:items/red_shell", "stream": true }]},
+    "item.star": { "category": "neutral", "sounds": [{ "name": "mk:items/star", "stream": true }]},
+    "item.bullet_bill": { "category": "neutral", "sounds": [{ "name": "mk:items/bullet_bill", "stream": true }]},
+    "item.bullet_bill_end": { "category": "neutral", "sounds": [{ "name": "mk:items/bullet_bill_end", "stream": true }]},
+    "item.blue_shell": { "category": "neutral", "sounds": [{ "name": "mk:items/blue_shell", "stream": true }]},
+    "item.blooper": { "category": "neutral", "sounds": [{ "name": "mk:items/blooper", "stream": true }]},
+    "item.boo": { "category": "neutral", "sounds": [{ "name": "mk:items/boo", "stream": true }]},
+
+    "item.bip": { "category": "neutral", "sounds": [{ "name": "mk:items/bip", "stream": true }]},
+
+
+    "item.throw": { "category": "neutral", "sounds": [{ "name": "mk:items/throw", "stream": true }]},
+
+
+    "misc.lap": { "category": "neutral", "sounds": [{ "name": "mk:misc/lap", "stream": true }]},
+    "misc.final_lap": { "category": "neutral", "sounds": [{ "name": "mk:misc/final_lap", "stream": true }]},
+    "misc.item_box": { "category": "neutral", "sounds": [{ "name": "mk:misc/item_box", "stream": true }]},
+    "misc.start_race": { "category": "neutral", "sounds": [{ "name": "mk:misc/start_race", "stream": true }]},
+    "misc.start_race2": { "category": "neutral", "sounds": [{ "name": "mk:misc/start_race2", "stream": true }]},
+    "misc.first_place": { "category": "neutral", "sounds": [{ "name": "mk:misc/first_place", "stream": true }]},
+    "misc.other_place": { "category": "neutral", "sounds": [{ "name": "mk:misc/other_place", "stream": true }]},
+    "misc.toad1": { "category": "neutral", "sounds": [{ "name": "mk:misc/toad1", "stream": true }]},
+    "misc.toad2": { "category": "neutral", "sounds": [{ "name": "mk:misc/toad2", "stream": true }]},
+    "misc.engine_start": { "category": "neutral", "sounds": [{ "name": "mk:misc/engine_start", "stream": true }]},
+    "misc.acceleration_start": { "category": "neutral", "sounds": [{ "name": "mk:misc/acceleration_start", "stream": true }]},
+    "music.bug": { "category": "neutral", "sounds": [{ "name": "mk:music/bug", "stream": true }]},
+    "misc.warninglakitu": { "category": "neutral", "sounds": [{ "name": "mk:misc/warninglakitu", "stream": true }] },
+
+    "misc.thwomp": { "category": "neutral", "sounds": [{ "name": "mk:misc/thwomp", "stream": true }]},
+
+    "misc.cow": { "category": "neutral", "sounds": [{ "name": "mk:misc/cow", "stream": true }]},
+
+    "misc.engine": { "category": "neutral", "sounds": [{ "name": "mk:misc/engine", "stream": true }]},
+
+    "mario.acceleration": { "category": "neutral", "sounds": [{ "name": "mk:mario/acceleration1", "stream": true , "weight": 1},{ "name": "mk:mario/acceleration2", "stream": true , "weight": 1},{ "name": "mk:mario/acceleration3", "stream": true , "weight": 1},{ "name": "mk:mario/acceleration4", "stream": true , "weight": 1}]},
+    "mario.damage_banana": { "category": "neutral", "sounds": [{ "name": "mk:mario/damage_banana", "stream": true }]},
+    "mario.damage_shell": { "category": "neutral", "sounds": [{ "name": "mk:mario/damage_shell", "stream": true }]},
+    "mario.damage_explosion": { "category": "neutral", "sounds": [{ "name": "mk:mario/damage_explosion", "stream": true }]},
+    "mario.double": { "category": "neutral", "sounds": [{ "name": "mk:mario/double", "stream": true }]},
+    "mario.gotcha": { "category": "neutral", "sounds": [{ "name": "mk:mario/gotcha", "stream": true }]}
+
+}

@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/item_slot/banana_slot"
+    },
+
+        "display": {
+		"firstperson_righthand": {
+			"rotation": [10, -40, 0],
+			"translation": [2.5, 13.5, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 42],
+			"translation": [0, 0, 0],
+			"scale": [0, 0, 0]
+		}
+	}
+}

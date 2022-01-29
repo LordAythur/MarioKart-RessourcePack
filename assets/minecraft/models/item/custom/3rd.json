@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/position/3rd"
+    },
+
+    "display": {
+		"firstperson_righthand": {
+			"rotation": [0, 0, 0],
+			"translation": [4, 14, 0],
+			"scale": [0.2, 0.2, 0.2]
+		},
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 42],
+			"translation": [0, 2.75, 0.75],
+			"scale": [0, 0, 0]
+		}
+	}
+}

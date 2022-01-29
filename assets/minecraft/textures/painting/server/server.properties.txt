@@ -1,0 +1,11 @@
+sync-chunk-writes=true
+gamemode=SURVIVAL
+spawn-monsters=true
+entity-broadcast-range-percentage=100
+max-world-size=29999984
+spawn-npcs=true
+view-distance=15
+spawn-animals=true
+generate-structures=false
+use-native=true
+rate-limit=0

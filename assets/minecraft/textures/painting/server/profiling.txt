@@ -1,0 +1,863 @@
+---- Minecraft Profiler Results ----
+// Now with less numbers
+
+Version: 1.17
+Time span: 10055 ms
+Tick span: 156 ticks
+// This is approximately 15.51 ticks per second. It should be 20 ticks per second
+
+--- BEGIN PROFILE DUMP ---
+
+[00] tick(156/1) - 99.09%/99.09%
+[01] |   levels(156/1) - 69.05%/68.42%
+[02] |   |   ServerLevel[Vide] minecraft:overworld(156/1) - 99.90%/68.35%
+[03] |   |   |   tick(156/1) - 100.00%/68.35%
+[04] |   |   |   |   chunkSource(156/1) - 93.88%/64.17%
+[05] |   |   |   |   |   chunks(156/1) - 99.72%/63.99%
+[06] |   |   |   |   |   |   pollingChunks(156/1) - 99.32%/63.55%
+[07] |   |   |   |   |   |   |   tickBlocks(40207/258) - 94.60%/60.12%
+[08] |   |   |   |   |   |   |   |   unspecified(40207/258) - 69.71%/41.91%
+[08] |   |   |   |   |   |   |   |   randomTick(14742000/94500) - 30.29%/18.21%
+[09] |   |   |   |   |   |   |   |   |   #getChunkCacheMiss 47019/301
+[09] |   |   |   |   |   |   |   |   |   #getChunk 1675497/10740
+[07] |   |   |   |   |   |   |   unspecified(156/1) - 3.61%/2.30%
+[07] |   |   |   |   |   |   |   broadcast(241282/1547) - 1.39%/0.88%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 620/3
+[08] |   |   |   |   |   |   |   |   #getChunk 2652/17
+[07] |   |   |   |   |   |   |   iceandsnow(40207/258) - 0.30%/0.19%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 5145/32
+[08] |   |   |   |   |   |   |   |   #getChunk 5158/33
+[07] |   |   |   |   |   |   |   thunder(40207/258) - 0.06%/0.04%
+[07] |   |   |   |   |   |   |   naturalSpawnCount(156/1) - 0.04%/0.02%
+[07] |   |   |   |   |   |   |   customSpawners(156/1) - 0.00%/0.00%
+[06] |   |   |   |   |   |   unspecified(156/1) - 0.68%/0.44%
+[05] |   |   |   |   |   purge(156/1) - 0.26%/0.17%
+[05] |   |   |   |   |   unload(156/1) - 0.02%/0.01%
+[06] |   |   |   |   |   |   chunk_unload(156/1) - 58.07%/0.01%
+[06] |   |   |   |   |   |   unspecified(156/1) - 39.84%/0.00%
+[06] |   |   |   |   |   |   poi(156/1) - 2.09%/0.00%
+[05] |   |   |   |   |   unspecified(156/1) - 0.01%/0.01%
+[04] |   |   |   |   entities(156/1) - 6.06%/4.14%
+[05] |   |   |   |   |   tick(149448/958) - 78.38%/3.25%
+[06] |   |   |   |   |   |   minecraft:armor_stand(14664/94) - 38.73%/1.26%
+[07] |   |   |   |   |   |   |   #tickNonPassenger 14664/94
+[07] |   |   |   |   |   |   |   unspecified(14664/94) - 37.22%/0.47%
+[07] |   |   |   |   |   |   |   push(14664/94) - 18.05%/0.23%
+[08] |   |   |   |   |   |   |   |   #getEntities 14664/94
+[07] |   |   |   |   |   |   |   entityBaseTick(14664/94) - 17.86%/0.22%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 4368/28
+[08] |   |   |   |   |   |   |   |   #getChunk 65832/422
+[07] |   |   |   |   |   |   |   livingEntityBaseTick(14664/94) - 10.75%/0.14%
+[08] |   |   |   |   |   |   |   |   #getChunk 14664/94
+[07] |   |   |   |   |   |   |   freezing(14664/94) - 9.28%/0.12%
+[08] |   |   |   |   |   |   |   |   #getChunk 31512/202
+[07] |   |   |   |   |   |   |   travel(14664/94) - 1.94%/0.02%
+[07] |   |   |   |   |   |   |   ai(14664/94) - 1.55%/0.02%
+[07] |   |   |   |   |   |   |   headTurn(14664/94) - 1.25%/0.02%
+[07] |   |   |   |   |   |   |   jump(14664/94) - 1.05%/0.01%
+[07] |   |   |   |   |   |   |   rangeChecks(14664/94) - 1.04%/0.01%
+[06] |   |   |   |   |   |   minecraft:area_effect_cloud(66924/429) - 30.75%/1.00%
+[07] |   |   |   |   |   |   |   #tickNonPassenger 66924/429
+[07] |   |   |   |   |   |   |   entityBaseTick(66924/429) - 62.21%/0.62%
+[08] |   |   |   |   |   |   |   |   #getChunkCacheMiss 312/2
+[08] |   |   |   |   |   |   |   |   #getChunk 209508/1343
+[07] |   |   |   |   |   |   |   unspecified(66924/429) - 37.79%/0.38%
+[06] |   |   |   |   |   |   minecraft:painting(65052/417) - 16.12%/0.52%
+[07] |   |   |   |   |   |   |   #getEntities 1292/8
+[07] |   |   |   |   |   |   |   #tickNonPassenger 65052/417
+[07] |   |   |   |   |   |   |   #getChunkCacheMiss 322/2
+[07] |   |   |   |   |   |   |   #getChunk 94532/605
+[06] |   |   |   |   |   |   unspecified(149448/958) - 13.06%/0.42%
+[06] |   |   |   |   |   |   minecraft:player(312/2) - 1.02%/0.03%
+[07] |   |   |   |   |   |   |   #tickNonPassenger 312/2
+[06] |   |   |   |   |   |   minecraft:end_crystal(2496/16) - 0.32%/0.01%
+[07] |   |   |   |   |   |   |   #tickNonPassenger 2496/16
+[05] |   |   |   |   |   unspecified(156/1) - 18.07%/0.75%
+[05] |   |   |   |   |   checkDespawn(149448/958) - 3.55%/0.15%
+[04] |   |   |   |   weather(156/1) - 0.03%/0.02%
+[05] |   |   |   |   |   unspecified(156/1) - 50.35%/0.01%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball1_position1 0.5s(6/0) - 8.62%/0.00%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball1_position3 0.5s(5/0) - 7.80%/0.00%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball1_position2 0.5s(5/0) - 7.48%/0.00%
+[05] |   |   |   |   |   fill 1993 113 1949 1993 105 1959 air(16/0) - 5.52%/0.00%
+[05] |   |   |   |   |   fill 1961 107 2006 1961 117 1996 air(16/0) - 1.88%/0.00%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball2_position2 0.5s(4/0) - 1.28%/0.00%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball2_position1 0.5s(4/0) - 1.26%/0.00%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball2_position3 0.5s(4/0) - 1.21%/0.00%
+[05] |   |   |   |   |   schedule function mk:map/stade/fireball2_position4 0.5s(4/0) - 0.97%/0.00%
+[05] |   |   |   |   |   setblock 1993 113 1952 minecraft:polished_blackstone(6/0) - 0.93%/0.00%
+[05] |   |   |   |   |   setblock 1993 113 1954 minecraft:polished_blackstone(5/0) - 0.86%/0.00%
+[05] |   |   |   |   |   setblock 1993 113 1953 minecraft:polished_blackstone(5/0) - 0.77%/0.00%
+[05] |   |   |   |   |   setblock 1993 111 1958 minecraft:polished_blackstone(6/0) - 0.52%/0.00%
+[05] |   |   |   |   |   setblock 1993 108 1950 minecraft:polished_blackstone(5/0) - 0.27%/0.00%
+[05] |   |   |   |   |   setblock 1961 115 1997 minecraft:polished_blackstone(4/0) - 0.27%/0.00%
+[05] |   |   |   |   |   setblock 1993 105 1952 minecraft:polished_blackstone(5/0) - 0.26%/0.00%
+[05] |   |   |   |   |   setblock 1961 109 1997 minecraft:polished_blackstone(4/0) - 0.26%/0.00%
+[05] |   |   |   |   |   setblock 1993 105 1953 minecraft:polished_blackstone(6/0) - 0.26%/0.00%
+[05] |   |   |   |   |   setblock 1993 112 1957 minecraft:polished_blackstone(5/0) - 0.26%/0.00%
+[05] |   |   |   |   |   setblock 1993 106 1951 minecraft:polished_blackstone(5/0) - 0.26%/0.00%
+[05] |   |   |   |   |   setblock 1961 117 2000 minecraft:polished_blackstone(4/0) - 0.25%/0.00%
+[05] |   |   |   |   |   setblock 1993 111 1950 minecraft:polished_blackstone(5/0) - 0.24%/0.00%
+[05] |   |   |   |   |   setblock 1993 109 1958 minecraft:polished_blackstone(5/0) - 0.24%/0.00%
+[05] |   |   |   |   |   setblock 1993 105 1954 minecraft:polished_blackstone(5/0) - 0.24%/0.00%
+[05] |   |   |   |   |   setblock 1993 109 1950 minecraft:polished_blackstone(5/0) - 0.24%/0.00%
+[05] |   |   |   |   |   setblock 1993 106 1957 minecraft:polished_blackstone(5/0) - 0.24%/0.00%
+[05] |   |   |   |   |   setblock 1993 107 1950 minecraft:polished_blackstone(6/0) - 0.24%/0.00%
+[05] |   |   |   |   |   setblock 1993 105 1955 minecraft:polished_blackstone(5/0) - 0.23%/0.00%
+[05] |   |   |   |   |   setblock 1961 116 2005 minecraft:polished_blackstone(4/0) - 0.23%/0.00%
+[05] |   |   |   |   |   setblock 1961 116 1998 minecraft:polished_blackstone(4/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1961 117 2002 minecraft:polished_blackstone(4/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1993 105 1956 minecraft:polished_blackstone(6/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1961 113 1996 minecraft:polished_blackstone(4/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1993 107 1958 minecraft:polished_blackstone(5/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1993 113 1955 minecraft:polished_blackstone(6/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1993 112 1951 minecraft:polished_blackstone(5/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1961 116 1997 minecraft:polished_blackstone(4/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1961 117 1999 minecraft:polished_blackstone(4/0) - 0.22%/0.00%
+[05] |   |   |   |   |   setblock 1993 110 1950 minecraft:polished_blackstone(6/0) - 0.21%/0.00%
+[05] |   |   |   |   |   setblock 1993 108 1958 minecraft:polished_blackstone(6/0) - 0.21%/0.00%
+[05] |   |   |   |   |   setblock 1961 109 2005 minecraft:polished_blackstone(4/0) - 0.21%/0.00%
+[05] |   |   |   |   |   setblock 1961 111 2006 minecraft:polished_blackstone(4/0) - 0.20%/0.00%
+[05] |   |   |   |   |   setblock 1993 110 1958 minecraft:polished_blackstone(5/0) - 0.20%/0.00%
+[05] |   |   |   |   |   setblock 1993 113 1956 minecraft:polished_blackstone(5/0) - 0.19%/0.00%
+[05] |   |   |   |   |   setblock 1961 108 2004 minecraft:polished_blackstone(4/0) - 0.19%/0.00%
+[05] |   |   |   |   |   setblock 1961 112 1996 minecraft:polished_blackstone(4/0) - 0.18%/0.00%
+[05] |   |   |   |   |   setblock 1961 110 1996 minecraft:polished_blackstone(4/0) - 0.18%/0.00%
+[05] |   |   |   |   |   setblock 1961 107 2000 minecraft:polished_blackstone(4/0) - 0.18%/0.00%
+[05] |   |   |   |   |   setblock 1961 115 2005 minecraft:polished_blackstone(4/0) - 0.18%/0.00%
+[05] |   |   |   |   |   setblock 1961 111 1996 minecraft:polished_blackstone(4/0) - 0.17%/0.00%
+[05] |   |   |   |   |   setblock 1961 117 2001 minecraft:polished_blackstone(4/0) - 0.17%/0.00%
+[05] |   |   |   |   |   setblock 1961 113 2006 minecraft:polished_blackstone(4/0) - 0.17%/0.00%
+[05] |   |   |   |   |   setblock 1961 108 1997 minecraft:polished_blackstone(4/0) - 0.17%/0.00%
+[05] |   |   |   |   |   setblock 1961 116 2004 minecraft:polished_blackstone(4/0) - 0.17%/0.00%
+[05] |   |   |   |   |   setblock 1961 107 2002 minecraft:polished_blackstone(4/0) - 0.16%/0.00%
+[05] |   |   |   |   |   setblock 1961 110 2006 minecraft:polished_blackstone(4/0) - 0.16%/0.00%
+[05] |   |   |   |   |   setblock 1961 112 2006 minecraft:polished_blackstone(4/0) - 0.16%/0.00%
+[05] |   |   |   |   |   setblock 1961 107 2003 minecraft:polished_blackstone(4/0) - 0.16%/0.00%
+[05] |   |   |   |   |   setblock 1961 107 2001 minecraft:polished_blackstone(4/0) - 0.15%/0.00%
+[05] |   |   |   |   |   setblock 1961 108 1998 minecraft:polished_blackstone(4/0) - 0.15%/0.00%
+[05] |   |   |   |   |   setblock 1961 108 2005 minecraft:polished_blackstone(4/0) - 0.15%/0.00%
+[05] |   |   |   |   |   setblock 1961 107 1999 minecraft:polished_blackstone(4/0) - 0.14%/0.00%
+[05] |   |   |   |   |   setblock 1961 114 1996 minecraft:polished_blackstone(4/0) - 0.13%/0.00%
+[05] |   |   |   |   |   setblock 1961 117 2003 minecraft:polished_blackstone(4/0) - 0.13%/0.00%
+[05] |   |   |   |   |   setblock 1961 114 2006 minecraft:polished_blackstone(4/0) - 0.13%/0.00%
+[04] |   |   |   |   unspecified(156/1) - 0.02%/0.01%
+[04] |   |   |   |   tickPending(156/1) - 0.01%/0.01%
+[05] |   |   |   |   |   unspecified(156/1) - 81.00%/0.01%
+[05] |   |   |   |   |   ticking(312/2) - 13.47%/0.00%
+[05] |   |   |   |   |   cleaning(312/2) - 5.53%/0.00%
+[04] |   |   |   |   entityManagement(156/1) - 0.01%/0.00%
+[04] |   |   |   |   raid(156/1) - 0.00%/0.00%
+[04] |   |   |   |   blockEvents(156/1) - 0.00%/0.00%
+[04] |   |   |   |   world border(156/1) - 0.00%/0.00%
+[04] |   |   |   |   blockEntities(156/1) - 0.00%/0.00%
+[03] |   |   |   unspecified(156/1) - 0.00%/0.00%
+[03] |   |   |   timeSync(8/0) - 0.00%/0.00%
+[02] |   |   ServerLevel[Vide] minecraft:the_nether(156/1) - 0.05%/0.04%
+[03] |   |   |   tick(156/1) - 95.70%/0.03%
+[04] |   |   |   |   chunkSource(156/1) - 56.61%/0.02%
+[05] |   |   |   |   |   chunks(156/1) - 60.12%/0.01%
+[06] |   |   |   |   |   |   pollingChunks(156/1) - 72.79%/0.01%
+[07] |   |   |   |   |   |   |   unspecified(156/1) - 65.40%/0.01%
+[07] |   |   |   |   |   |   |   naturalSpawnCount(156/1) - 32.42%/0.00%
+[07] |   |   |   |   |   |   |   customSpawners(156/1) - 2.18%/0.00%
+[06] |   |   |   |   |   |   unspecified(156/1) - 27.21%/0.00%
+[05] |   |   |   |   |   unload(156/1) - 14.63%/0.00%
+[06] |   |   |   |   |   |   unspecified(156/1) - 60.35%/0.00%
+[06] |   |   |   |   |   |   chunk_unload(156/1) - 31.78%/0.00%
+[06] |   |   |   |   |   |   poi(156/1) - 7.87%/0.00%
+[05] |   |   |   |   |   unspecified(156/1) - 14.09%/0.00%
+[05] |   |   |   |   |   purge(156/1) - 11.16%/0.00%
+[04] |   |   |   |   unspecified(156/1) - 14.91%/0.01%
+[04] |   |   |   |   tickPending(156/1) - 14.08%/0.00%
+[05] |   |   |   |   |   unspecified(156/1) - 77.06%/0.00%
+[05] |   |   |   |   |   ticking(312/2) - 16.57%/0.00%
+[05] |   |   |   |   |   cleaning(312/2) - 6.37%/0.00%
+[04] |   |   |   |   weather(156/1) - 8.94%/0.00%
+[04] |   |   |   |   raid(156/1) - 1.70%/0.00%
+[04] |   |   |   |   world border(156/1) - 1.45%/0.00%
+[04] |   |   |   |   entityManagement(156/1) - 1.23%/0.00%
+[04] |   |   |   |   blockEvents(156/1) - 1.08%/0.00%
+[03] |   |   |   unspecified(156/1) - 3.70%/0.00%
+[03] |   |   |   timeSync(8/0) - 0.60%/0.00%
+[02] |   |   ServerLevel[Vide] minecraft:the_end(156/1) - 0.04%/0.02%
+[03] |   |   |   tick(156/1) - 94.16%/0.02%
+[04] |   |   |   |   chunkSource(156/1) - 47.33%/0.01%
+[05] |   |   |   |   |   chunks(156/1) - 40.66%/0.00%
+[06] |   |   |   |   |   |   pollingChunks(156/1) - 63.52%/0.00%
+[07] |   |   |   |   |   |   |   unspecified(156/1) - 69.68%/0.00%
+[07] |   |   |   |   |   |   |   naturalSpawnCount(156/1) - 24.44%/0.00%
+[07] |   |   |   |   |   |   |   customSpawners(156/1) - 5.88%/0.00%
+[06] |   |   |   |   |   |   unspecified(156/1) - 36.48%/0.00%
+[05] |   |   |   |   |   unload(156/1) - 30.02%/0.00%
+[06] |   |   |   |   |   |   unspecified(156/1) - 65.47%/0.00%
+[06] |   |   |   |   |   |   chunk_unload(156/1) - 21.25%/0.00%
+[06] |   |   |   |   |   |   poi(156/1) - 13.27%/0.00%
+[05] |   |   |   |   |   unspecified(156/1) - 19.07%/0.00%
+[05] |   |   |   |   |   purge(156/1) - 10.25%/0.00%
+[04] |   |   |   |   tickPending(156/1) - 19.05%/0.00%
+[05] |   |   |   |   |   unspecified(156/1) - 69.38%/0.00%
+[05] |   |   |   |   |   ticking(312/2) - 23.85%/0.00%
+[05] |   |   |   |   |   cleaning(312/2) - 6.77%/0.00%
+[04] |   |   |   |   unspecified(156/1) - 17.22%/0.00%
+[04] |   |   |   |   weather(156/1) - 6.55%/0.00%
+[04] |   |   |   |   raid(156/1) - 3.52%/0.00%
+[04] |   |   |   |   blockEvents(156/1) - 3.12%/0.00%
+[04] |   |   |   |   world border(156/1) - 1.81%/0.00%
+[04] |   |   |   |   entityManagement(156/1) - 1.39%/0.00%
+[03] |   |   |   unspecified(156/1) - 5.77%/0.00%
+[03] |   |   |   timeSync(8/0) - 0.06%/0.00%
+[02] |   |   unspecified(156/1) - 0.02%/0.01%
+[01] |   commandFunctions(156/1) - 30.62%/30.34%
+[02] |   |   minecraft:tick(156/1) - 99.89%/30.31%
+[03] |   |   |   execute as @e[type=minecraft:area_effect_cloud,tag=circuit] run data merge entity @s {Age:1}(156/1) - 10.12%/3.07%
+[03] |   |   |   execute at @e[nbt={Age:49},tag=spawn_cube_time] run summon end_crystal ~ ~ ~ {Invulnerable:1b,ShowBottom:0b}(156/1) - 5.56%/1.69%
+[03] |   |   |   execute as @e[tag=circuit] at @s at @a[distance=..200] if score @p circuit = @s circuit run tag @s add existe(156/1) - 4.58%/1.39%
+[03] |   |   |   unspecified(156/1) - 2.89%/0.88%
+[03] |   |   |   execute at @p as @e[tag=spawn_point,distance=..200] at @e[tag=tp] if score @s spawn_point = @e[tag=tp,sort=nearest,limit=1] number run tp @e[tag=tp,sort=nearest,limit=1] @s(156/1) - 2.03%/0.61%
+[04] |   |   |   |   #getEntities 156/1
+[03] |   |   |   scoreboard players remove @e[scores={timeHighSpeed=1..}] timeHighSpeed 1(156/1) - 1.66%/0.50%
+[03] |   |   |   execute as @e[tag=circuit,tag=!existe] at @s at @p[distance=..8] if score @s circuit > @p circuit if score @s checkpoint = @p checkpoint run scoreboard players operation @p circuit = @s circuit(156/1) - 1.45%/0.44%
+[03] |   |   |   execute as @a unless entity @s[scores={time_star=..161}] run clear @s carved_pumpkin(156/1) - 1.41%/0.43%
+[03] |   |   |   scoreboard players set @e[name="toad",scores={toad=160..}] toad 0(156/1) - 1.34%/0.41%
+[03] |   |   |   execute as @e[scores={speed=2000..}] at @s run effect clear @p[distance=..1] blindness(156/1) - 0.99%/0.30%
+[03] |   |   |   execute as @a store result score @s playermotionX run data get entity @s Motion[0] 300(156/1) - 0.90%/0.27%
+[03] |   |   |   execute as @e[name="toad",scores={toad=80}] at @s run playsound mk:misc.toad2 ambient @a ~ ~ ~ 2 1(156/1) - 0.66%/0.20%
+[03] |   |   |   scoreboard players add @e[scores={time_star=..161}] time_star 1(156/1) - 0.59%/0.18%
+[03] |   |   |   execute as @e[name="toad",scores={toad=0}] at @s run playsound mk:misc.toad1 ambient @a ~ ~ ~ 2 1(156/1) - 0.55%/0.17%
+[03] |   |   |   execute as @e[tag=voiture,tag=!lakitu_remonte] at @s if block ~ ~ ~ water at @e[tag=circuit,sort=furthest,distance=..200] unless block ~ ~-1 ~ air if score @s checkpoint = @e[tag=circuit,limit=1,sort=nearest] checkpoint run scoreboard players operation @e[tag=voiture,limit=1,sort=nearest] circuit = @e[tag=circuit,limit=1,sort=nearest] circuit(156/1) - 0.55%/0.17%
+[03] |   |   |   scoreboard players add @e[name="toad"] toad 1(156/1) - 0.53%/0.16%
+[03] |   |   |   execute as @e[name="Chomp"] at @s run scoreboard players set @a[distance=..2,scores={stun=..0}] stun 40(156/1) - 0.52%/0.16%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bullet_bill_item","use"]}}]},scores={click2=1..}] at @s run function mk:object/bullet_bill/lunch(156/1) - 0.49%/0.15%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint5"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (4)","color":"white"}'},Tags:["SpawnPoint4"]} 1(156/1) - 0.45%/0.14%
+[03] |   |   |   execute as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item2"]}}]}] at @s unless entity @e[tag=red_shell,tag=1,distance=..3] run clear @s minecraft:warped_fungus_on_a_stick{Tags:["red_shell_item2"]} 1(156/1) - 0.42%/0.13%
+[03] |   |   |   execute as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item2"]}}]}] at @s unless entity @e[tag=banana,tag=1,distance=..3] run clear @s minecraft:warped_fungus_on_a_stick{Tags:["banana_item2"]} 1(156/1) - 0.42%/0.13%
+[03] |   |   |   execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick"}]}] at @s positioned ~ ~-0.5 ~ if entity @e[type=end_crystal,distance=..1] run function mk:object/random_cube/rand_anim(156/1) - 0.42%/0.13%
+[04] |   |   |   |   #getEntities 312/2
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_green_shell_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:2,display:{Name:'{"text":"green_shell","color":"green"}'},Tags:["green_shell_item2"]} 1(156/1) - 0.41%/0.13%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_mushroom_item"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:16,display:{Name:'{"text":"Double mushroom","color":"red"}'},Tags:["double_mushroom_item","use"]} 1(156/1) - 0.41%/0.12%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["ClassicPoint"]}}},scores={click2=1..}] at @s run function mk:map/setup/items/classic_point(156/1) - 0.41%/0.12%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item2"]}}]},scores={click2=1..}] at @s as @e[tag=banana,limit=1,sort=nearest] at @s run function mk:object/banana/lunch(156/1) - 0.40%/0.12%
+[03] |   |   |   execute as @a store result score @s playermotionZ run data get entity @s Motion[2] 300(156/1) - 0.39%/0.12%
+[03] |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 2 103 0 {Text2:'{"text":"Mode de jeu","color":"gray","bold":true}',Text3:'{"text":"Grand Prix","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_mode 1"}}',Text4:'{"text":"→","color":"gray"}'}(156/1) - 0.38%/0.11%
+[04] |   |   |   |   #getChunkCacheMiss 221/1
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item2"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:12,display:{Name:'{"text":"Double green_shell","color":"green"}'},Tags:["double_green_shell_item1"]} 1(156/1) - 0.37%/0.11%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint6"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (5)","color":"white"}'},Tags:["SpawnPoint5"]} 1(156/1) - 0.37%/0.11%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_mushroom_item"]}}]},scores={click2=1..}] run function mk:object/mushroom/give(156/1) - 0.36%/0.11%
+[03] |   |   |   tag @e[tag=circuit] remove existe(156/1) - 0.35%/0.11%
+[03] |   |   |   execute as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item2"]}}]}] at @s unless entity @e[tag=green_shell,tag=1,distance=..3] run clear @s minecraft:warped_fungus_on_a_stick{Tags:["green_shell_item2"]} 1(156/1) - 0.35%/0.11%
+[03] |   |   |   execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick"}]}] at @s positioned ~ ~-0.5 ~ as @e[type=end_crystal,distance=..1] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["spawn_cube_time"],Duration:50}(156/1) - 0.34%/0.10%
+[04] |   |   |   |   #getEntities 312/2
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["Checkpoint"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/checkpoint(156/1) - 0.34%/0.10%
+[03] |   |   |   execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick"}]}] at @s positioned ~ ~-0.5 ~ as @e[type=end_crystal,distance=..1] run kill @s(156/1) - 0.33%/0.10%
+[04] |   |   |   |   #getEntities 312/2
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["TestCircuit"]}}},scores={click2=1..}] at @s run function mk:map/setup/lunch_circuit(156/1) - 0.33%/0.10%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["EndLine"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/end_point(156/1) - 0.32%/0.10%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blue_shell_item"]}}]},scores={click2=1..}] at @s run function mk:object/blue_shell/spawn(156/1) - 0.32%/0.10%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item2"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["green_shell_item2"]} 1(156/1) - 0.32%/0.10%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["RandomCube"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/cube_point(156/1) - 0.32%/0.10%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item2"]}}]}] as @e[tag=green_shell,tag=g1,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.32%/0.10%
+[03] |   |   |   execute as @e[tag=red_shell,tag=1,tag=!r1,tag=!r2,tag=!r3] at @s as @p unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item2"]}}]}] as @e[tag=red_shell,tag=1,limit=1,sort=nearest] run function mk:object/red_shell/lunch(156/1) - 0.31%/0.10%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item2"]}}]},scores={click2=1..}] at @s as @e[tag=green_shell,limit=1,sort=nearest] at @s run function mk:object/green_shell/lunch(156/1) - 0.31%/0.10%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint3"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint1"]}}},scores={click2=1..}] at @s run clear @s minecraft:warped_fungus_on_a_stick{Tags:["SpawnPoint1"]} 1(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint1"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint2"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item2"]}}]},scores={click2=1..}] at @s as @e[tag=red_shell,limit=1,sort=nearest] at @s run function mk:object/red_shell/lunch(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["boo_item"]}}]},scores={click2=1..}] at @s run function mk:object/boo/lunch(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blooper_item"]}}]},scores={click2=1..}] at @s as @a unless score @s player = @p player run tag @s add blind(156/1) - 0.31%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:2,display:{Name:'{"text":"Green Shell","color":"dark_green"}'},Tags:["green_shell_item2"]} 1(156/1) - 0.31%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item2"]}}]}] as @e[tag=red_shell,tag=r1,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint2"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (1)","color":"white"}'},Tags:["SpawnPoint1"]} 1(156/1) - 0.31%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item2"]}}]}] at @s unless entity @e[tag=bomb,tag=1,distance=..3] run clear @s minecraft:warped_fungus_on_a_stick{Tags:["bomb_item2"]} 1(156/1) - 0.31%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item2"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["red_shell_item2"]} 1(156/1) - 0.31%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item2"]}}]}] as @e[tag=green_shell,tag=g3,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-3 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item2"]}}]}] as @e[tag=green_shell,tag=g2,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-2 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item2"]}}]}] as @e[tag=banana,tag=b1,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["golden_mushroom_item"]}}]},scores={click2=1..}] at @s as @e[tag=voiture,sort=nearest,limit=1] run function mk:object/golden_mushroom/speed(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint4"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_green_shell_item1"]}}]},scores={click2=1..}] at @s as @e[tag=green_shell,limit=1,sort=nearest,tag=g2] at @s run function mk:object/green_shell/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:13,display:{Name:'{"text":"Triple green_shell","color":"green"}'},Tags:["triple_green_shell_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_red_shell_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:3,display:{Name:'{"text":"red_shell","color":"dark_red"}'},Tags:["red_shell_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint4"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (3)","color":"white"}'},Tags:["SpawnPoint3"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @e[tag=green_shell,tag=1,tag=!g1,tag=!g2,tag=!g3] at @s as @p unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item2"]}}]}] as @e[tag=green_shell,tag=1,limit=1,sort=nearest] run function mk:object/green_shell/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint5"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.30%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:3,display:{Name:'{"text":"Red Shell","color":"dark_red"}'},Tags:["red_shell_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item1"]}}]},scores={click2=1..}] at @s run function mk:object/green_shell/spawn(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint3"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (2)","color":"white"}'},Tags:["SpawnPoint2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint7"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_green_shell_item1"]}}]}] as @e[tag=green_shell,tag=g2,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint6"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item2"]}}]}] as @e[tag=red_shell,tag=r2,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-2 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blue_shell_item"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["blue_shell_item"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["star_item"]}}]},scores={click2=1..}] at @s run function mk:object/star/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item2"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:14,display:{Name:'{"text":"Double red_shell","color":"dark_red"}'},Tags:["double_red_shell_item1"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item2"]}}]}] as @e[tag=red_shell,tag=r3,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-3 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_green_shell_item1"]}}]}] as @e[tag=green_shell,tag=g3,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-2 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item2"]}}]},scores={click2=1..}] at @s as @e[tag=green_shell,limit=1,sort=nearest,tag=g1] at @s run function mk:object/green_shell/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["mushroom_item"]}}]},scores={click2=1..}] at @s as @e[tag=voiture,sort=nearest,limit=1] run function mk:object/mushroom/speed(156/1) - 0.30%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item2"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["banana_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item2"]}}]},scores={click2=1..}] at @s as @e[tag=banana,limit=1,sort=nearest] at @s run function mk:object/banana/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item2"]}}]},scores={click2=1..}] at @s as @e[tag=red_shell,limit=1,sort=nearest,tag=r1] at @s run function mk:object/red_shell/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint7"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (6)","color":"white"}'},Tags:["SpawnPoint6"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_red_shell_item1"]}}]}] as @e[tag=red_shell,tag=r2,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_mushroom_item"]}}]},scores={click2=1..}] at @s as @e[tag=voiture,sort=nearest,limit=1] run function mk:object/mushroom/speed(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint8"]}}},scores={click2=1..}] at @s align xz positioned ~0.5 ~ ~0.5 run function mk:map/setup/items/spawn_point(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_red_shell_item1"]}}]},scores={click2=1..}] at @s as @e[tag=red_shell,limit=1,sort=nearest,tag=r2] at @s run function mk:object/red_shell/lunch(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player run summon lightning_bolt ~ ~-30 ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_red_shell_item1"]}}]}] as @e[tag=red_shell,tag=r3,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-2 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["SpawnPoint8"]}}},scores={click2=1..}] at @s run item replace entity @s container.0 with warped_fungus_on_a_stick{display:{Name:'{"text":"Spawn (7)","color":"white"}'},Tags:["SpawnPoint7"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["mushroom_item"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["mushroom_item"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item2"]}}]}] as @e[tag=banana,tag=b3,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-3 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_banana_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:8,display:{Name:'{"text":"Banana","color":"yellow"}'},Tags:["banana_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:15,display:{Name:'{"text":"Triple red_shell","color":"dark_red"}'},Tags:["triple_red_shell_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item2"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["bomb_item2"]} 1(156/1) - 0.30%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item2"]}}]}] as @e[tag=banana,tag=b2,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-2 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.30%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_green_shell_item1"]}}]},scores={click2=1..}] at @s run function mk:object/triple_green_shell/spawn(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_red_shell_item1"]}}]},scores={click2=1..}] at @s run function mk:object/triple_red_shell/spawn(156/1) - 0.29%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:19,display:{Name:'{"text":"Triple Banana","color":"yellow"}'},Tags:["triple_banana_item2"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item1"]}}]},scores={click2=1..}] at @s run function mk:object/red_shell/spawn(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @e[tag=banana,tag=1,tag=!b1,tag=!b2,tag=!b3] at @s as @p unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item2"]}}]}] as @e[tag=banana,tag=1,limit=1,sort=nearest,distance=..2] run function mk:object/banana/lunch(156/1) - 0.29%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["boo_item"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["boo_item"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item2"]}}]},scores={click2=1..}] at @s as @e[tag=bomb,limit=1,sort=nearest] at @s run function mk:object/bomb/lunch(156/1) - 0.29%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_banana_item1"]}}]}] as @e[tag=banana,tag=b3,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-2 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.29%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blooper_item"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["blooper_item"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:8,display:{Name:'{"text":"Banana","color":"yellow"}'},Tags:["banana_item2"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item2"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:18,display:{Name:'{"text":"Double Banana","color":"yellow"}'},Tags:["double_banana_item1"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   execute at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_banana_item1"]}}]}] as @e[tag=banana,tag=b2,tag=1,sort=nearest,limit=1] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 3 run scoreboard players set @p slow 110(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blooper_item"]}}]},scores={click2=1..}] at @s as @a unless score @s player = @p player run item replace entity @s weapon.mainhand with totem_of_undying(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item1"]}}]},scores={click2=1..}] at @s run function mk:object/banana/spawn(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["double_banana_item1"]}}]},scores={click2=1..}] at @s as @e[tag=banana,limit=1,sort=nearest] at @s run function mk:object/banana/lunch(156/1) - 0.29%/0.09%
+[03] |   |   |   clear @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] minecraft:warped_fungus_on_a_stick{Tags:["thunder_item"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_mushroom_item"]}}]},scores={click2=1..}] at @s as @e[tag=voiture,sort=nearest,limit=1] run function mk:object/mushroom/speed(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item1"]}}]},scores={click2=1..}] at @s run function mk:object/bomb/spawn(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["triple_banana_item1"]}}]},scores={click2=1..}] at @s run function mk:object/triple_banana/spawn(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player run clear @p warped_fungus_on_a_stick(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 8 run scoreboard players set @p slow 20(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @e[tag=red_shell,tag=1,tag=!r1,tag=!r2] at @s at @p[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["red_shell_item2"]}}]},distance=..3] rotated ~ 0 run tp @s ^ ^ ^-1 ~ 0(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blooper_item"]}}]},scores={click2=1..}] at @s as @a unless score @s player = @p player run effect give @s minecraft:instant_damage 1 50 true(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 7 run scoreboard players set @p slow 40(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 1 run scoreboard players set @p slow 130(156/1) - 0.29%/0.09%
+[03] |   |   |   item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item1"]}}]},scores={click2=1..}] weapon.offhand with warped_fungus_on_a_stick{CustomModelData:9,display:{Name:'{"text":"Bomb-omb","color":"dark"}'},Tags:["bomb_item2"]} 1(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 5 run scoreboard players set @p slow 80(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 6 run scoreboard players set @p slow 60(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["blooper_item"]}}]},scores={click2=1..}] run schedule function mk:object/bloop/blind 2s(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 2 run scoreboard players set @p slow 120(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player if score @p number matches 4 run scoreboard players set @p slow 100(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["thunder_item"]}}]},scores={click2=1..}] at @s at @a unless score @s player = @p player run scoreboard players set @p stun 40(156/1) - 0.29%/0.09%
+[03] |   |   |   execute as @e[tag=end_point] at @s as @a[distance=..1.5] if score @s checkpoint = @e[tag=end_point,limit=1,sort=nearest] checkpoint run tag @s add lapok(156/1) - 0.28%/0.09%
+[03] |   |   |   scoreboard players add @e[tag=bomb,tag=!1] time_object 1(156/1) - 0.28%/0.08%
+[03] |   |   |   execute as @e[tag=red_shell,tag=!1] at @s as @a[sort=furthest,distance=..10] unless score @s player = @e[tag=red_shell,tag=!1,sort=nearest,limit=1] player facing entity @s feet run tp @e[tag=red_shell,tag=!1,sort=nearest,limit=1] ~ ~ ~ ~ ~(156/1) - 0.28%/0.08%
+[03] |   |   |   execute as @e[tag=banana,tag=1] at @s at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["banana_item2"]}}]},distance=..3] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.27%/0.08%
+[03] |   |   |   execute as @e[tag=red_shell,tag=!1,tag=follow_player] at @s run tp @s ^ ^ ^1(156/1) - 0.27%/0.08%
+[03] |   |   |   tag @e[tag=red_shell,tag=!1,tag=!follow_player] add follow_path(156/1) - 0.27%/0.08%
+[03] |   |   |   execute as @e[tag=green_shell,tag=!1] at @s run function mk:object/green_shell/move(156/1) - 0.26%/0.08%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s as @e[tag=classic_point] facing entity @s feet if score @s circuit = @e[tag=spawn_circuit,limit=1,sort=nearest] circuit run tag @e[tag=spawn_circuit,limit=1,sort=nearest] add nokill(156/1) - 0.26%/0.08%
+[03] |   |   |   execute as @e[tag=casse] store result score @s UUID run data get entity @s UUID[0](156/1) - 0.26%/0.08%
+[03] |   |   |   scoreboard players add @e[tag=bullet_bill] time_object 1(156/1) - 0.26%/0.08%
+[03] |   |   |   execute as @e[tag=checkpoint] at @s at @p[distance=..9] if score @s checkpoint = @p checkpoint run scoreboard players add @p checkpoint 1(156/1) - 0.26%/0.08%
+[03] |   |   |   execute as @e[tag=bomb,scores={time_object=80..}] at @s run function mk:object/bomb/spawn_explosion(156/1) - 0.25%/0.08%
+[03] |   |   |   execute as @e[tag=voiture,tag=!lakitu_remonte] at @s if block ~ ~ ~ water run tag @s add lakitu_remonte(156/1) - 0.25%/0.08%
+[03] |   |   |   execute as @e[tag=voiture,tag=!lakitu_remonte] at @s if block ~ ~-0.3 ~ barrier at @e[tag=circuit,sort=furthest,distance=..200] unless block ~ ~-1 ~ air if score @s checkpoint = @e[tag=circuit,limit=1,sort=nearest] checkpoint run scoreboard players operation @e[tag=voiture,limit=1,sort=nearest] circuit = @e[tag=circuit,limit=1,sort=nearest] circuit(156/1) - 0.25%/0.08%
+[03] |   |   |   execute as @e[tag=red_shell,tag=!1] at @s at @a[sort=furthest,distance=..10] unless score @s player = @p player run tag @s add follow_player(156/1) - 0.25%/0.08%
+[03] |   |   |   tag @e[tag=red_shell,tag=!1] remove follow_path(156/1) - 0.25%/0.08%
+[03] |   |   |   execute as @e[tag=voiture,tag=!lakitu_remonte] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air unless entity @e[tag=circuit,distance=..15] at @e[tag=circuit,sort=furthest,distance=..200] unless block ~ ~-1 ~ air if score @s checkpoint = @e[tag=circuit,limit=1,sort=nearest] checkpoint run scoreboard players operation @e[tag=voiture,limit=1,sort=nearest] circuit = @e[tag=circuit,limit=1,sort=nearest] circuit(156/1) - 0.25%/0.08%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s as @a[sort=furthest,distance=..10] if score @s number matches 1 facing entity @s feet run tp @e[tag=blue_shell,sort=nearest,limit=1] ~ ~ ~ ~ ~(156/1) - 0.25%/0.07%
+[03] |   |   |   execute as @e[tag=voiture,tag=!lakitu_remonte] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air unless entity @e[tag=circuit,distance=..15] run tag @s add lakitu_remonte(156/1) - 0.25%/0.07%
+[03] |   |   |   execute as @e[tag=red_shell,tag=!1] at @s unless block ~ ~-0.5 ~ air unless block ~ ~0.5 ~ air unless block ~0.5 ~ ~ air unless block ~ ~ ~0.5 air unless block ~-0.5 ~ ~ air unless block ~ ~ ~-0.5 air run function mk:object/red_shell/kill(156/1) - 0.25%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,tag=1] at @s at @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item2"]}}]},distance=..3] if score @p player = @s player rotated ~ 0 positioned ^ ^ ^-1 rotated as @p run tp @s ~ ~ ~ ~ ~(156/1) - 0.24%/0.07%
+[03] |   |   |   tag @e[tag=red_shell,tag=!1] remove follow_player(156/1) - 0.24%/0.07%
+[03] |   |   |   execute at @e[tag=red_shell,tag=!1] run playsound mk:item.red_shell ambient @a(156/1) - 0.24%/0.07%
+[03] |   |   |   scoreboard players reset @e[tag=blue_shell,scores={time_object=8}] time_object(156/1) - 0.24%/0.07%
+[03] |   |   |   execute as @e[tag=voiture,tag=!lakitu_remonte] at @s if block ~ ~-0.3 ~ barrier run tag @s add lakitu_remonte(156/1) - 0.24%/0.07%
+[03] |   |   |   kill @e[tag=spawn_circuit,tag=!nokill](156/1) - 0.24%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell,tag=1] at @s at @p[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["green_shell_item2"]}}]},distance=..3] rotated ~ 0 run tp @s ^ ^ ^-1 ~ 0(156/1) - 0.24%/0.07%
+[03] |   |   |   scoreboard players add @e[tag=blue_shell] time_object 1(156/1) - 0.24%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell,scores={time_object=1}] at @s run playsound mk:item.blue_shell ambient @a ~ ~ ~ 3 1(156/1) - 0.24%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,tag=1] at @s as @p unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["bomb_item2"]}}]}] as @e[tag=bomb,tag=1,limit=1,sort=nearest,distance=..2] run function mk:object/bomb/lunch(156/1) - 0.24%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,scores={time_object=80..}] at @s run kill @s(156/1) - 0.24%/0.07%
+[03] |   |   |   kill @e[tag=bullet_bill,scores={time_object=200..}](156/1) - 0.24%/0.07%
+[03] |   |   |   tag @e[tag=blue_shell,tag=!follow_player] add follow_path_fast(156/1) - 0.24%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill] at @s run effect clear @p[distance=..1] blindness(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill,scores={time_object=..200}] at @s at @a[distance=..2] unless score @p player = @s player if score @p stun matches 0 run scoreboard players set @p stun 40(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,scores={time_object=40}] run data merge entity @s {ArmorItems:[{},{},{},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;138177983,952978638,-1996948002,1906533730],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZmZjczNDYzMjUwZWY3OWFkNDA4YWI0MGJkODE1NjM4Y2E5ZTEzOWQzMGJmYzYzZTg1ODMxYzE4NTgwYzAzZiJ9fX0="}]}}}}]}(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,scores={time_object=50}] run data merge entity @s {ArmorItems:[{},{},{},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1365676247,-2029432989,-1321142647,-460410509],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQzNzUzY2QxZjRjNDkyM2ZlOWM3ZmZiNWZjZTExNGYzYWI5ODBjNzU2NDQ2NDYxZDNiNDczMzIyZGE4ZDE0YiJ9fX0="}]}}}}]}(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell,tag=follow_player] at @s run tp @s ^ ^ ^1(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill,scores={multiplication=0}] at @s as @a unless score @s player = @e[tag=bullet_bill,limit=1,sort=nearest] player run playsound mk:item.bip ambient @s ~ ~ ~ 2 1(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,scores={time_object=60}] run data merge entity @s {ArmorItems:[{},{},{},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;138177983,952978638,-1996948002,1906533730],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZmZjczNDYzMjUwZWY3OWFkNDA4YWI0MGJkODE1NjM4Y2E5ZTEzOWQzMGJmYzYzZTg1ODMxYzE4NTgwYzAzZiJ9fX0="}]}}}}]}(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill,scores={time_object=..200}] at @s run kill @e[tag=casse,distance=..2](156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill,scores={time_object=200..}] at @a if score @p player = @s player run stopsound @p * mk:item.bullet_bill(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bomb,scores={time_object=70}] run data merge entity @s {ArmorItems:[{},{},{},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1365676247,-2029432989,-1321142647,-460410509],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQzNzUzY2QxZjRjNDkyM2ZlOWM3ZmZiNWZjZTExNGYzYWI5ODBjNzU2NDQ2NDYxZDNiNDczMzIyZGE4ZDE0YiJ9fX0="}]}}}}]}(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill,scores={time_object=200..}] at @a if score @p player = @s player run clear @p minecraft:warped_fungus_on_a_stick{Tags:["bullet_bill_item"]} 1(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill,scores={time_object=200..}] at @a if score @p player = @s player run playsound mk:item.bullet_bill_end ambient @a(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=casse,tag=!1] run scoreboard players add @s time_object 1(156/1) - 0.23%/0.07%
+[03] |   |   |   kill @e[tag=casse,scores={time_object=1200..}](156/1) - 0.23%/0.07%
+[03] |   |   |   tag @e[tag=nokill] remove nokill(156/1) - 0.23%/0.07%
+[03] |   |   |   execute as @e[tag=red_shell] at @s at @a[distance=..2] unless score @p player = @s player as @p if entity @s[scores={stun=0}] run scoreboard players set @s stun 40(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s as @e[tag=classic_point] facing entity @s feet if score @s circuit = @e[tag=spawn_circuit,limit=1,sort=nearest] circuit run tp @e[tag=spawn_circuit,limit=1,sort=nearest] ^ ^ ^1(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=red_shell] at @s at @a[distance=..2] unless score @p player = @s player run function mk:object/red_shell/kill(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=lakitu_remonte] run function mk:kart/lakitu(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill] run scoreboard players set @s -1 5(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s at @a[sort=furthest,distance=..10] if score @p number matches 1 run tag @s add follow_player(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=banana] if entity @s[scores={time_object=5..}] at @s at @a[distance=..1] as @p if entity @s[scores={confused=0}] at @s run playsound mk:mario.damage_banana ambient @s(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=follow_path_fast] run function mk:object/follow_path_fast(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill] run scoreboard players operation @s multiplication = @s time_object(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=bomb] at @s at @a[distance=..2] unless score @p player = @s player run scoreboard players set @s time_object 80(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s as @a[distance=..2] if score @s stun matches 0 run scoreboard players set @s stun 40(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell] unless entity @s[scores={time_object=5..}] at @s at @a[distance=..2] unless score @p player = @s player as @p if entity @s[scores={stun=0}] run scoreboard players set @s stun 40(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell_anim] at @s at @e[tag=green_shell,distance=..3] if score @e[tag=green_shell,sort=nearest,limit=1] UUID = @s UUID run tp @s ~ ~-0.3 ~(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=red_shell_anim] at @s at @e[tag=red_shell,distance=..3] if score @e[tag=red_shell,sort=nearest,limit=1] UUID = @s UUID run tp @s ~ ~-0.3 ~(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell_anim] at @s unless entity @e[tag=green_shell,limit=1,sort=nearest,distance=..2] run function mk:object/green_shell/kill(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s at @a[distance=..2] if score @p number matches 1 at @s run scoreboard players set @a[distance=..4] stun 40(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s as @e[tag=checkpoint,distance=..1] if score @s circuit = @e[tag=spawn_circuit,limit=1,sort=nearest] circuit run scoreboard players add @e[tag=spawn_circuit,limit=1,sort=nearest] checkpoint 1(156/1) - 0.22%/0.07%
+[03] |   |   |   tag @e[tag=blue_shell] remove follow_path_fast(156/1) - 0.22%/0.07%
+[03] |   |   |   tag @e[tag=blue_shell] remove follow_player(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell_anim] at @s run tp @s ~ ~ ~ ~10 ~(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill] at @a if score @p player = @s player run tp @e[tag=voiture,sort=nearest,limit=1,distance=..1] @s(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell] if entity @s[scores={time_object=5..}] at @s at @a[distance=..2] as @p if entity @s[scores={stun=0}] run scoreboard players set @s stun 40(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=bullet_bill] run scoreboard players operation @s multiplication %= @s -1(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s at @a[distance=..2] if score @p number matches 1 at @s run playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 4 1.2(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell] at @s as @e[tag=green_shell,distance=..2] unless score @s player = @e[tag=green_shell,distance=..2,sort=nearest,limit=1] player as @e[distance=..2,tag=green_shell] run function mk:object/green_shell/kill(156/1) - 0.22%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s at @a[distance=..2] if score @p number matches 1 at @s run particle minecraft:dust_color_transition 0.3 0.3 1 1 1 1 1 ~ ~ ~ 1 1 1 0.1 1000 force @a(156/1) - 0.21%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s at @a[distance=..2] if score @p number matches 1 at @s run function mk:object/blue_shell/explosion(156/1) - 0.21%/0.07%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s as @a[distance=..2] if score @s number matches 1 run scoreboard players set @s stun 40(156/1) - 0.21%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell] if entity @s[scores={time_object=5..}] at @s at @a[distance=..2] run function mk:object/green_shell/kill(156/1) - 0.21%/0.07%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s as @e[tag=circuit,sort=nearest,limit=1] at @e[tag=circuit,distance=..200] run scoreboard players add @s circuit 1(156/1) - 0.21%/0.07%
+[03] |   |   |   execute as @e[tag=green_shell] unless entity @s[scores={time_object=5..}] at @s at @a[distance=..2] unless score @p player = @s player run function mk:object/green_shell/kill(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s run tp @s ~ ~ ~ ~10 ~(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s at @a[distance=..2] if score @p number matches 1 run data merge entity @s {Rotation:[1.0f,-90.0f,0.0f]}(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=bullet_bill] at @a if score @p player = @s player run scoreboard players operation @e[tag=voiture,sort=nearest,limit=1,distance=..1] speed = @p max_speed(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s as @e[tag=classic_point,distance=..1] if score @s circuit = @e[tag=spawn_circuit,limit=1,sort=nearest] circuit run scoreboard players add @e[tag=spawn_circuit,limit=1,sort=nearest] circuit 1(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=follow_path] run function mk:object/follow_path(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=red_shell_anim] at @s run tp @s ~ ~ ~ ~10 ~(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["circuit"],Duration:1000}(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s run kill @e[distance=..2,tag=casse](156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=blue_shell] at @s run particle minecraft:dust_color_transition 0.3 0.3 1 1 1 1 1 ~ ~ ~ 0.25 0 0.25 0.1 10 force @a(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=banana] if entity @s[scores={time_object=5..}] at @s at @a[distance=..1] as @p if entity @s[scores={confused=0}] run scoreboard players set @s confused 40(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=banana] unless entity @s[scores={time_object=5..}] at @s at @a[distance=..1] unless score @p player = @s player as @p if entity @s[scores={confused=0}] at @s run playsound mk:mario.damage_banana ambient @s(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=red_shell_anim] at @s unless entity @e[tag=red_shell,limit=1,sort=nearest,distance=..2] run function mk:object/red_shell/kill(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=spawn_circuit] at @s as @e[tag=circuit,sort=nearest,limit=1] run scoreboard players operation @s checkpoint = @e[tag=spawn_circuit,sort=nearest,limit=1] checkpoint(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=banana] if entity @s[scores={time_object=5..}] at @s at @a[distance=..1] run kill @s(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=banana] unless entity @s[scores={time_object=5..}] at @s at @a[distance=..1] unless score @p player = @s player as @p if entity @s[scores={confused=0}] run scoreboard players set @s confused 40(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=banana] at @s at @e[tag=!banana,tag=casse,distance=..1] unless score @s UUID = @e[tag=casse,sort=nearest,limit=1] UUID at @s as @e[distance=..1,tag=casse] run kill @s(156/1) - 0.21%/0.06%
+[03] |   |   |   execute as @e[tag=banana] unless entity @s[scores={time_object=5..}] at @s at @a[distance=..1] unless score @p player = @s player run kill @s(156/1) - 0.21%/0.06%
+[03] |   |   |   summon minecraft:painting -1 105 13 {Motive:"minecraft:fighters"}(156/1) - 0.18%/0.05%
+[03] |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block -1 103 -2 {Text2:'{"text":"","color":"red","bold":true}',Text3:'{"text":"","color":"red","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.15%/0.05%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @e[name="Thwomp",type=armor_stand] at @s run function mk:map/rainbow/thwomp(156/1) - 0.15%/0.05%
+[03] |   |   |   effect give @a minecraft:saturation 10000 10 true(156/1) - 0.14%/0.04%
+[03] |   |   |   data merge block 0 104 2 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players add @a nbr_player_kart 1"}}',Text2:'{"text":"Kart lourd","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a[gamemode=adventure] choix_voiture 2"}}',Text3:'{"text":" + Vit. - Accél.","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/execute as @r[scores={choix_voiture=3},gamemode=spectator] at @s run gamemode adventure"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/gamemode spectator @a[scores={choix_voiture=..2}]"}}'}(156/1) - 0.12%/0.04%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if entity @p[distance=..1] unless score @p confused matches 1.. rotated as @p[distance=..1] run function mk:kart/redirect_kart(156/1) - 0.12%/0.04%
+[03] |   |   |   data merge block 0 103 2 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players add @a nbr_player_kart 1"}}',Text2:'{"text":"Kart standard","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a[gamemode=adventure] choix_voiture 1"}}',Text3:'{"text":" Vit. = Accél.","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/execute as @r[scores={choix_voiture=3},gamemode=spectator] at @s run gamemode adventure"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/gamemode spectator @a[scores={choix_voiture=..2}]"}}'}(156/1) - 0.12%/0.04%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   data merge block 0 102 2 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players add @a nbr_player_kart 1"}}',Text2:'{"text":"Kart léger","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a[gamemode=adventure] choix_voiture 0"}}',Text3:'{"text":" - Vit. + Accél.","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/execute as @r[scores={choix_voiture=3},gamemode=spectator] at @s run gamemode adventure"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/gamemode spectator @a[scores={choix_voiture=..2}]"}}'}(156/1) - 0.12%/0.03%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   data merge block 2 101 1 {Text2:'{"text":"Valider →","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 1"}}',Text3:'{"text":" ","clickEvent":{"action":"run_command","value":"/execute as @a at @a run scoreboard players add @s nbr_player 1"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_voiture 3"}}'}(156/1) - 0.11%/0.03%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   data merge block 2 104 13 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":""}}',Text2:'{"text":"Cliquez quand","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text3:'{"text":"tout le monde","bold":true,"clickEvent":{"action":"run_command","value":"/function mk:spawn/start_menu"}}',Text4:'{"text":"est prêt","bold":true,"clickEvent":{"action":"run_command","value":""}}'}(156/1) - 0.11%/0.03%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @s[scores={choix_objet=0}] at @s run data merge block -2 103 0 {Text2:'{"text":"Mode d\'objet","color":"gray","bold":true}',Text3:'{"text":"Normal","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_objet 1"}}',Text4:'{"text":"→","color":"gray"}'}(156/1) - 0.10%/0.03%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   scoreboard players set @a[scores={time_star=1..}] stun 0(156/1) - 0.09%/0.03%
+[03] |   |   |   execute unless score @r nbr_player = @s nbr_player_kart run data merge block -1 101 2 {Text2:'{"text":"","color":"white","bold":true,"clickEvent":{"action":"run_command","value":""}}'}(156/1) - 0.09%/0.03%
+[04] |   |   |   |   #getChunkCacheMiss 247/1
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 0 102 -2 {Text2:'{"text":"Lancer la partie","color":"gray","bold":true}',Text3:'{"text":"partie","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function mk:spawn/lancement_partie"}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.09%/0.03%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block -2 103 -2 {Text2:'{"text":"","color":"green","bold":true}',Text3:'{"text":"","color":"green","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.09%/0.03%
+[04] |   |   |   |   #getChunk 1404/9
+[03] |   |   |   data merge block -2 101 -1 {Text2:'{"text":"Valider →","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 3"}}'}(156/1) - 0.09%/0.03%
+[04] |   |   |   |   #getChunkCacheMiss 156/1
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 1 103 -2 {Text2:'{"text":"","color":"purple","bold":true}',Text3:'{"text":"","color":"purple","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.08%/0.03%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @a unless entity @s[scores={lap=4..}] run title @s actionbar ["","Tour : ",{"score":{"name":"@s","objective":"lap"}},"/3"](156/1) - 0.08%/0.03%
+[03] |   |   |   execute as @a at @a unless score @p player = @s player if score @p number > @s number run scoreboard players add @s Position 1(156/1) - 0.08%/0.02%
+[03] |   |   |   data merge block -2 101 1 {Text2:'{"text":"← Retour","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 1"}}',Text3:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_voiture 3"}}'}(156/1) - 0.08%/0.02%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 2 103 -2 {Text2:'{"text":"","color":"aqua","bold":true}',Text3:'{"text":"","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.08%/0.02%
+[04] |   |   |   |   #getChunk 1404/9
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s run scoreboard players operation @s multiplication *= @s weight(312/2) - 0.08%/0.02%
+[03] |   |   |   data merge block 1 101 2 {Text2:'{"text":"← Retour","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 0"}}'}(156/1) - 0.07%/0.02%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   data merge block -1 101 -2 {Text2:'{"text":"← Retour","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 2"}}'}(156/1) - 0.07%/0.02%
+[04] |   |   |   |   #getChunk 1248/8
+[03] |   |   |   kill @e[type=item](156/1) - 0.06%/0.02%
+[03] |   |   |   execute as @e[type=pig] at @s run particle minecraft:mycelium ~ ~ ~ 0.1 0 0.1 0.00001 100(156/1) - 0.06%/0.02%
+[03] |   |   |   execute as @a[scores={playermotionX=0,playermotionZ=0}] unless entity @s[scores={confused=1..}] at @s as @e[type=pig,tag=voiture,distance=..1,sort=nearest,limit=1,scores={speed=1..}] run scoreboard players operation @s speed -= @s multiplication(156/1) - 0.06%/0.02%
+[04] |   |   |   |   #getEntities 302/1
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=..199}] {Health:1f}(156/1) - 0.05%/0.02%
+[03] |   |   |   execute as @e[type=pig,tag=voiture,scores={speed=600..}] at @s unless block ~-0.45 ~0.95 ~ #mk:exeption run scoreboard players set @s speed 0(156/1) - 0.05%/0.01%
+[03] |   |   |   execute as @a at @a unless score @s player = @p player if score @p multiplication > @s multiplication run scoreboard players add @s number 1(156/1) - 0.04%/0.01%
+[03] |   |   |   scoreboard players set @a Position 1(156/1) - 0.04%/0.01%
+[03] |   |   |   scoreboard players set @e[type=pig,tag=voiture,scores={speed=..0}] speed 0(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] run function mk:kart/move(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=1000..1199}] {Health:11f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ lime_glazed_terracotta run scoreboard players set @p weight 10(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if entity @p[distance=..1] run scoreboard players operation @s weight = @p[distance=..1] weight(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s unless entity @p[distance=..1] run scoreboard players operation @s[scores={speed=1..}] speed -= @s multiplication(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=1100..1299}] {Health:12f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=2000..}] {Health:20f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture,scores={speed=600..}] at @s unless block ~0.45 ~0.95 ~ #mk:exeption run scoreboard players set @s speed 0(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=200..299}] {Health:2f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ #mk:ralentissement unless entity @s[scores={speed=..200}] run scoreboard players operation @s speed -= @s multiplication(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=1500..2000}] {Health:15f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=800..999}] {Health:9f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=1200..1399}] {Health:13f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=700..899}] {Health:8f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=300..399}] {Health:3f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=600..799}] {Health:7f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=400..599}] {Health:5f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if entity @p[distance=..1,scores={confused=1..}] run scoreboard players operation @s[scores={speed=1..}] speed -= @s multiplication(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=1300..1499}] {Health:14f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture,scores={timeHighSpeed=1}] at @s if score @s speed > @p[distance=..1] max_speed run scoreboard players operation @s speed = @p[distance=..1] max_speed(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ light_blue_glazed_terracotta run playsound mk:mario.acceleration ambient @p ~ ~ ~ 5 0.9(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ yellow_glazed_terracotta unless entity @s[scores={timeHighSpeed=10..}] run scoreboard players set @s timeHighSpeed 10(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=300..499}] {Health:4f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ yellow_glazed_terracotta run playsound mk:mario.acceleration ambient @p ~ ~ ~ 5 0.9(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ light_blue_glazed_terracotta unless entity @s[scores={timeHighSpeed=20..}] run scoreboard players set @s timeHighSpeed 20(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture,scores={speed=600..}] at @s unless block ~ ~0.95 ~0.45 #mk:exeption run scoreboard players set @s speed 0(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ light_blue_glazed_terracotta run scoreboard players set @p weight 10(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=500..699}] {Health:6f}(156/1) - 0.04%/0.01%
+[03] |   |   |   data merge entity @e[type=pig,limit=1,sort=nearest,scores={speed=900..1099}] {Health:10f}(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture,scores={timeHighSpeed=1}] at @s as @p run scoreboard players operation @s weight = @s save_weight(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s run scoreboard players operation @s checkpoint = @p[distance=..1] checkpoint(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture,scores={speed=600..}] at @s unless block ~ ~0.95 ~-0.45 #mk:exeption run scoreboard players set @s speed 0(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s run scoreboard players set @s multiplication 3(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s run scoreboard players operation @s max_speed += @p[distance=..1] max_speed(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ lime_glazed_terracotta run scoreboard players set @s speed 3000(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s run scoreboard players operation @s max_speed = @p[distance=..1] acceleration(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ light_blue_glazed_terracotta run scoreboard players set @s speed 3000(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ lime_glazed_terracotta unless entity @s[scores={timeHighSpeed=40..}] run scoreboard players set @s timeHighSpeed 40(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ yellow_glazed_terracotta run scoreboard players set @p weight 10(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ lime_glazed_terracotta run playsound mk:mario.acceleration ambient @p ~ ~ ~ 5 0.9(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s if block ~ ~-0.2 ~ yellow_glazed_terracotta run scoreboard players set @s speed 3000(156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @e[type=pig,tag=voiture] at @s run scoreboard players set @s multiplication 6(156/1) - 0.04%/0.01%
+[03] |   |   |   function mk:kart/loop(312/2) - 0.04%/0.01%
+[03] |   |   |   team join 2eme @a[scores={number=2}](156/1) - 0.04%/0.01%
+[03] |   |   |   execute as @a run scoreboard players operation @s multiplication = @s total_circuit(156/1) - 0.03%/0.01%
+[03] |   |   |   summon minecraft:painting 2 105 13 {Motive:"minecraft:bust"}(156/1) - 0.03%/0.01%
+[03] |   |   |   execute as @a unless entity @s[scores={playermotionX=0,playermotionZ=0}] unless entity @s[scores={confused=1..}] at @s as @e[type=pig,tag=voiture,limit=1,sort=nearest,distance=..1] if score @s speed < @p[distance=..1] max_speed run scoreboard players operation @s speed += @p[distance=..1] acceleration(156/1) - 0.03%/0.01%
+[04] |   |   |   |   #getEntities 10/0
+[03] |   |   |   execute as @r at @s run function mk:spawn/panneau_mode(156/1) - 0.03%/0.01%
+[03] |   |   |   scoreboard players set @a[scores={leave=1..}] first_co 0(156/1) - 0.02%/0.01%
+[03] |   |   |   execute positioned 0 102 0 as @a[distance=0.3..10,scores={menu=0..4}] run tp @s 0 102 0(156/1) - 0.02%/0.01%
+[03] |   |   |   summon minecraft:painting 4 105 13 {Motive:"minecraft:match"}(156/1) - 0.02%/0.01%
+[03] |   |   |   team join 8eme @a[scores={number=8}](156/1) - 0.02%/0.01%
+[03] |   |   |   summon minecraft:painting 6 105 13 {Motive:"minecraft:graham"}(156/1) - 0.02%/0.01%
+[03] |   |   |   scoreboard players set @a playermotionX 0(156/1) - 0.02%/0.01%
+[03] |   |   |   execute if score @r nbr_player = @s nbr_player_kart run data merge block -1 101 2 {Text2:'{"text":"Valider →","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 2"}}'}(156/1) - 0.02%/0.01%
+[03] |   |   |   effect clear @a minecraft:fire_resistance(156/1) - 0.02%/0.01%
+[03] |   |   |   effect give @a[tag=ingame,predicate=!mk:ride_pig] minecraft:slowness 1 200 true(156/1) - 0.02%/0.00%
+[03] |   |   |   effect give @a minecraft:instant_health 10000 200 true(156/1) - 0.02%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={confused=1..}] confused 1(156/1) - 0.02%/0.00%
+[03] |   |   |   scoreboard players add @a[tag=lapok] lap 1(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players add @a checkpoint 1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a run scoreboard players operation @s multiplication += @s circuit(156/1) - 0.01%/0.00%
+[03] |   |   |   stopsound @a[scores={time_star=161..}] * mk:item.star(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/loop_object(312/2) - 0.01%/0.00%
+[03] |   |   |   team join 1er @a[scores={number=1}](156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={slow=1..}] at @s as @e[tag=voiture,sort=nearest,limit=1] if entity @s[scores={speed=300..}] run scoreboard players set @s speed 300(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players add @a[scores={rand_cube_time=1..}] rand_cube_time 1(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players reset @a click1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_gold=1..}] unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick",tag:{Tags:["golden_mushroom_item"]}}]}] run function mk:object/golden_mushroom/reset(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={multiplication=0,time_star=..161}] at @s as @a unless score @s player = @e[scores={time_star=..161},limit=1,sort=nearest] player run playsound mk:item.bip ambient @s ~ ~ ~ 2 1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1}] at @s run data merge block 2 103 0 {Text2:'{"text":"Mode de jeu","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_map 5"}}',Text3:'{"text":"Course seule","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_mode 0"}}',Text4:'{"text":"←","color":"gray","clickEvent":{"action":"run_command","value":"/kill @e[type=painting,distance=..10]"}}'}(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players add @a[scores={lap=4..2000}] lap 1(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players add @a[scores={time_gold=1..}] time_gold 1(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:map/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:spawn/leave(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:object/green_shell/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:spawn/spawn(312/2) - 0.01%/0.00%
+[03] |   |   |   scoreboard players reset @a[scores={time_star=161..}] time_star(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/triple_banana/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:map/setup/items_point(312/2) - 0.01%/0.00%
+[03] |   |   |   team join 7eme @a[scores={number=7}](156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @s[scores={choix_objet=1}] at @s run data merge block -2 103 0 {Text2:'{"text":"Mode d\'objet","color":"gray","bold":true}',Text3:'{"text":"Explosif","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_objet 0"}}',Text4:'{"text":"←","color":"gray"}'}(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={stun=1..}] at @s run function mk:kart/stun(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/triple_green_shell/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:object/blue_shell/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   team join 5eme @a[scores={number=5}](156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/boo/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   scoreboard players set @a[tag=lapok] checkpoint 1(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/triple_red_shell/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] at @s at @a[distance=..2] unless score @p player = @s player if score @p stun matches 0 run scoreboard players set @p stun 40(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/triple_mushroom/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:object/random_cube/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:object/thunder/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   team join 6eme @a[scores={number=6}](156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/banana/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:object/bomb/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   function mk:object/mushroom/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=3}] if entity @s[y_rotation=0..130] at @s run tp @s ~ ~ ~ ~20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   team join 4eme @a[scores={number=4}](156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={stun=1..}] stun 1(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/red_shell/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   scoreboard players remove @a checkpoint 1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={first_co=1},gamemode=adventure] at @s run tp @s 2 104 14 180 0(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={first_co=1},gamemode=spectator] at @s run gamemode adventure(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=1}] if entity @s[y_rotation=45..180] at @s run tp @s ~ ~ ~ ~-20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/bloop/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   scoreboard players set @a[scores={leave=1..}] leave 0(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1}] at @s run data merge block 0 102 -2 {Text2:'{"text":"Lancer la partie","color":"gray","bold":true}',Text3:'{"text":"partie","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function mk:spawn/lancement_partie"}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players set @a[scores={time_star=1..}] confused 0(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] at @s as @e[tag=voiture,sort=nearest,limit=1] run scoreboard players set @s[scores={speed=..2000}] speed 2000(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/bullet_bill/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=3}] if entity @s[y_rotation=-130..0] at @s run tp @s ~ ~ ~ ~-20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/star/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={first_co=10},gamemode=adventure] at @s run playsound mk:music.title ambient @s ~ ~ ~ 0.3 1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=0}] if entity @s[y_rotation=-270..-135] at @s run tp @s ~ ~ ~ ~20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players set @a number 1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[tag=lapok,scores={lap=4}] unless entity @s[scores={number=1}] at @s run playsound mk:misc.other_place ambient @s(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players remove @a[scores={slow=1..}] slow 1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=2}] if entity @s[y_rotation=135..270] at @s run tp @s ~ ~ ~ ~-20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   scoreboard players set @a playermotionZ 0(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[tag=lapok,scores={lap=4}] if entity @s[scores={number=1}] at @s run playsound mk:misc.first_place ambient @s(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=1}] if entity @s[y_rotation=-180..-45] at @s run tp @s ~ ~ ~ ~20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   function mk:object/golden_mushroom/loop(312/2) - 0.01%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1}] at @s run data merge block 1 103 -2 {Text2:'{"text":"Stade","color":"light_purple","bold":true}',Text3:'{"text":"Waluigi","color":"light_purple","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_map 2"}}',Text4:'{"text":" ","color":"gray","clickEvent":{"action":"run_command","value":"/summon painting 0 103 -2 {Motive:\\"minecraft:aztec\\"}"}}'}(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1}] at @s run data merge block 2 103 -2 {Text2:'{"text":"Route","color":"aqua","bold":true}',Text3:'{"text":"Arc-En-Ciel","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_map 3"}}',Text4:'{"text":" ","color":"gray","clickEvent":{"action":"run_command","value":"/summon painting 0 103 -2 {Motive:\\"minecraft:alban\\"}"}}'}(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] at @s run particle minecraft:entity_effect ~ ~0.5 ~ 0.5 0.5 0.5 1 20 force @a(156/1) - 0.01%/0.00%
+[03] |   |   |   team join 3eme @a[scores={number=3}](156/1) - 0.01%/0.00%
+[03] |   |   |   execute at @p[tag=start_race] at @e[sort=random,tag=tp,limit=1,distance=..50] as @a[distance=..50] unless entity @s[predicate=mk:ride_pig] run tag @a remove lunch(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=0}] if entity @s[y_rotation=-35..90] at @s run tp @s ~ ~ ~ ~-20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   tag @a[tag=lapok] remove lapok(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={rand_anim=0..}] run function mk:object/random_cube/give_animation(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={menu=2}] if entity @s[y_rotation=-90..45] at @s run tp @s ~ ~ ~ ~20 ~(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={lap=100}] at @s run playsound mk:music.result ambient @s(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1, choix_map=5}] at @s run data merge block 0 102 -2 {Text2:'{"text":" ","color":"gray","bold":true}',Text3:'{"text":" ","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":" "}}',Text4:'{"text":" ","color":"gray"}'}(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] run scoreboard players set @s -1 5(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] at @s run kill @e[tag=casse,distance=..2](156/1) - 0.01%/0.00%
+[03] |   |   |   effect clear @a minecraft:absorption(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] run scoreboard players operation @s multiplication %= @s -1(156/1) - 0.01%/0.00%
+[03] |   |   |   execute as @a[tag=lapok,scores={lap=4}] at @s run tag @e[type=pig,tag=voiture,limit=1,sort=nearest] add follow_path(156/1) - 0.00%/0.00%
+[03] |   |   |   execute if score @r nbr_player = @s nbr_player_kart run gamemode adventure @a[scores={meneur=1}](156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok] if entity @s[scores={lap=4}] run title @s title ["",{"text":"TERMINÉ !","color":"gold"}](156/1) - 0.00%/0.00%
+[03] |   |   |   execute at @p[tag=start_race] at @e[sort=random,tag=tp,limit=1,distance=..50] run tag @a[distance=..50] add lunch(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1}] at @s run data merge block -1 103 -2 {Text2:'{"text":"Circuit","color":"red","bold":true}',Text3:'{"text":"Champignon","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_map 1"}}',Text4:'{"text":" ","color":"gray","clickEvent":{"action":"run_command","value":"/summon painting 0 103 -2 {Motive:\\"minecraft:aztec2\\"}"}}'}(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok] unless entity @s[scores={lap=4..}] run scoreboard players set @s circuit 0(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @s[scores={choix_mode=1}] at @s run data merge block -2 103 -2 {Text2:'{"text":"Prairie","color":"green","bold":true}',Text3:'{"text":"Meuh Meuh","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_map 0"}}',Text4:'{"text":" ","color":"gray","clickEvent":{"action":"run_command","value":"/summon painting 0 103 -2 {Motive:\\"minecraft:aztec2\\"}"}}'}(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=161..}] at @s run scoreboard players operation @e[tag=voiture,sort=nearest,limit=1,distance=..1] speed = @s max_speed(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok] if entity @s[scores={lap=4}] run tag @s add finish(156/1) - 0.00%/0.00%
+[03] |   |   |   scoreboard players reset @a click2(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok,scores={lap=4}] run tag @s remove in_game(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[scores={time_gold=250..300}] run function mk:object/golden_mushroom/reset(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[scores={time_star=..161}] run scoreboard players operation @s multiplication = @s time_star(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok] if entity @s[scores={lap=3}] at @s run playsound mk:misc.final_lap ambient @s ~ ~ ~ 1 1.05(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @r[tag=lunch] run function mk:map/start(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[scores={first_co=1},gamemode=adventure] at @s run scoreboard players reset @s menu(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok] run scoreboard players operation @s total_circuit += @s circuit(156/1) - 0.00%/0.00%
+[03] |   |   |   effect clear @a minecraft:regeneration(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[scores={rand_cube_time=50..}] run function mk:object/give_random_object(156/1) - 0.00%/0.00%
+[03] |   |   |   execute as @a[tag=lapok] unless entity @s[scores={lap=3..}] at @s run playsound mk:misc.lap ambient @s(156/1) - 0.00%/0.00%
+[03] |   |   |   function mk:spawn/panneau_mode(156/1) - 0.00%/0.00%
+[02] |   |   unspecified(156/1) - 0.11%/0.03%
+[01] |   connection(156/1) - 0.30%/0.30%
+[02] |   |   #getEntities 936/6
+[02] |   |   #getChunkCacheMiss 31/0
+[02] |   |   #getChunk 27892/178
+[02] |   |   travel(312/2) - 44.13%/0.13%
+[03] |   |   |   #getChunk 1252/8
+[03] |   |   |   rest(312/2) - 50.28%/0.07%
+[04] |   |   |   |   #getChunkCacheMiss 3/0
+[04] |   |   |   |   #getChunk 5223/33
+[04] |   |   |   |   #getChunkNow 27/0
+[03] |   |   |   move(312/2) - 33.34%/0.04%
+[04] |   |   |   |   #getEntities 312/2
+[04] |   |   |   |   #getChunkCacheMiss 1/0
+[04] |   |   |   |   #getChunk 5030/32
+[03] |   |   |   unspecified(312/2) - 16.38%/0.02%
+[02] |   |   unspecified(156/1) - 34.17%/0.10%
+[02] |   |   livingEntityBaseTick(312/2) - 11.08%/0.03%
+[03] |   |   |   #getChunkCacheMiss 32/0
+[03] |   |   |   #getChunk 9189/58
+[02] |   |   entityBaseTick(312/2) - 4.89%/0.01%
+[03] |   |   |   #getChunkCacheMiss 318/2
+[03] |   |   |   #getChunk 4359/27
+[02] |   |   push(312/2) - 1.94%/0.01%
+[03] |   |   |   #getEntities 312/2
+[02] |   |   ai(312/2) - 1.60%/0.00%
+[03] |   |   |   unspecified(312/2) - 74.59%/0.00%
+[03] |   |   |   newAi(312/2) - 25.41%/0.00%
+[02] |   |   freezing(312/2) - 1.14%/0.00%
+[03] |   |   |   #getChunk 889/5
+[02] |   |   headTurn(312/2) - 0.68%/0.00%
+[02] |   |   keepAlive(312/2) - 0.16%/0.00%
+[02] |   |   rangeChecks(312/2) - 0.11%/0.00%
+[02] |   |   jump(312/2) - 0.09%/0.00%
+[01] |   unspecified(156/1) - 0.02%/0.02%
+[01] |   tallying(156/1) - 0.00%/0.00%
+[01] |   players(156/1) - 0.00%/0.00%
+[01] |   server gui refresh(156/1) - 0.00%/0.00%
+[01] |   snooper(156/1) - 0.00%/0.00%
+[00] nextTickWait(156/1) - 0.91%/0.91%
+[01] |   #getEntities 282/1
+[01] |   #runTask 1275/8
+[01] |   #getChunkCacheMiss 11/0
+[01] |   #getChunk 17430/111
+[01] |   #getChunkNow 90/0
+[01] |   unspecified(156/1) - 93.77%/0.85%
+[01] |   move(282/2) - 4.21%/0.04%
+[02] |   |   #getEntities 282/1
+[02] |   |   #getChunkCacheMiss 20/0
+[02] |   |   #getChunk 17252/110
+[01] |   rest(282/2) - 2.02%/0.02%
+[02] |   |   #getChunkCacheMiss 5/0
+[02] |   |   #getChunk 4863/31
+[02] |   |   #getChunkNow 45/0
+[00] unspecified(156/1) - 0.00%/0.00%
+--- END PROFILE DUMP ---
+
+--- BEGIN COUNTER DUMP ---
+
+-- Counter: getChunk --
+[00] root total:0/2214262 average: 0/14193
+[01] |   tick total:0/2174717 average: 0/13940
+[02] |   |   levels total:0/2099355 average: 0/13457
+[03] |   |   |   ServerLevel[Vide] minecraft:overworld total:0/2099355 average: 0/13457
+[04] |   |   |   |   tick total:0/2099355 average: 0/13457
+[05] |   |   |   |   |   chunkSource total:0/1683307 average: 0/10790
+[06] |   |   |   |   |   |   chunks total:0/1683307 average: 0/10790
+[07] |   |   |   |   |   |   |   pollingChunks total:0/1683307 average: 0/10790
+[08] |   |   |   |   |   |   |   |   tickBlocks total:0/1675497 average: 0/10740
+[09] |   |   |   |   |   |   |   |   |   randomTick total:1675497/1675497 average: 10740/10740
+[08] |   |   |   |   |   |   |   |   iceandsnow total:5158/5158 average: 33/33
+[08] |   |   |   |   |   |   |   |   broadcast total:2652/2652 average: 17/17
+[05] |   |   |   |   |   entities total:0/416048 average: 0/2666
+[06] |   |   |   |   |   |   tick total:0/416048 average: 0/2666
+[07] |   |   |   |   |   |   |   minecraft:area_effect_cloud total:0/209508 average: 0/1343
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:209508/209508 average: 1343/1343
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:0/112008 average: 0/718
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:65832/65832 average: 422/422
+[08] |   |   |   |   |   |   |   |   freezing total:31512/31512 average: 202/202
+[08] |   |   |   |   |   |   |   |   livingEntityBaseTick total:14664/14664 average: 94/94
+[07] |   |   |   |   |   |   |   minecraft:painting total:94532/94532 average: 605/605
+[02] |   |   connection total:27892/53834 average: 178/345
+[03] |   |   |   travel total:1252/11505 average: 8/73
+[04] |   |   |   |   rest total:5223/5223 average: 33/33
+[04] |   |   |   |   move total:5030/5030 average: 32/32
+[03] |   |   |   livingEntityBaseTick total:9189/9189 average: 58/58
+[03] |   |   |   entityBaseTick total:4359/4359 average: 27/27
+[03] |   |   |   freezing total:889/889 average: 5/5
+[02] |   |   commandFunctions total:0/21528 average: 0/138
+[03] |   |   |   minecraft:tick total:0/21528 average: 0/138
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block -2 103 -2 {Text2:'{"text":"","color":"green","bold":true}',Text3:'{"text":"","color":"green","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'} total:1404/1404 average: 9/9
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 2 103 -2 {Text2:'{"text":"","color":"aqua","bold":true}',Text3:'{"text":"","color":"aqua","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'} total:1404/1404 average: 9/9
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 1 103 -2 {Text2:'{"text":"","color":"purple","bold":true}',Text3:'{"text":"","color":"purple","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block -1 103 -2 {Text2:'{"text":"","color":"red","bold":true}',Text3:'{"text":"","color":"red","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text4:'{"text":" ","color":"gray"}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block 2 101 1 {Text2:'{"text":"Valider →","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 1"}}',Text3:'{"text":" ","clickEvent":{"action":"run_command","value":"/execute as @a at @a run scoreboard players add @s nbr_player 1"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_voiture 3"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block 1 101 2 {Text2:'{"text":"← Retour","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 0"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block -2 101 -1 {Text2:'{"text":"Valider →","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 3"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 2 103 0 {Text2:'{"text":"Mode de jeu","color":"gray","bold":true}',Text3:'{"text":"Grand Prix","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_mode 1"}}',Text4:'{"text":"→","color":"gray"}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   execute unless score @r nbr_player = @s nbr_player_kart run data merge block -1 101 2 {Text2:'{"text":"","color":"white","bold":true,"clickEvent":{"action":"run_command","value":""}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 0 102 -2 {Text2:'{"text":"Lancer la partie","color":"gray","bold":true}',Text3:'{"text":"partie","color":"gray","bold":true,"clickEvent":{"action":"run_command","value":"/function mk:spawn/lancement_partie"}}',Text4:'{"text":" ","color":"gray"}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block 0 102 2 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players add @a nbr_player_kart 1"}}',Text2:'{"text":"Kart léger","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a[gamemode=adventure] choix_voiture 0"}}',Text3:'{"text":" - Vit. + Accél.","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/execute as @r[scores={choix_voiture=3},gamemode=spectator] at @s run gamemode adventure"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/gamemode spectator @a[scores={choix_voiture=..2}]"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block 0 104 2 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players add @a nbr_player_kart 1"}}',Text2:'{"text":"Kart lourd","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a[gamemode=adventure] choix_voiture 2"}}',Text3:'{"text":" + Vit. - Accél.","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/execute as @r[scores={choix_voiture=3},gamemode=spectator] at @s run gamemode adventure"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/gamemode spectator @a[scores={choix_voiture=..2}]"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block -2 101 1 {Text2:'{"text":"← Retour","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 1"}}',Text3:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_voiture 3"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block 0 103 2 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":"/scoreboard players add @a nbr_player_kart 1"}}',Text2:'{"text":"Kart standard","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a[gamemode=adventure] choix_voiture 1"}}',Text3:'{"text":" Vit. = Accél.","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/execute as @r[scores={choix_voiture=3},gamemode=spectator] at @s run gamemode adventure"}}',Text4:'{"text":" ","clickEvent":{"action":"run_command","value":"/gamemode spectator @a[scores={choix_voiture=..2}]"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block -1 101 -2 {Text2:'{"text":"← Retour","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 2"}}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   execute as @s[scores={choix_objet=0}] at @s run data merge block -2 103 0 {Text2:'{"text":"Mode d\'objet","color":"gray","bold":true}',Text3:'{"text":"Normal","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_objet 1"}}',Text4:'{"text":"→","color":"gray"}'} total:1248/1248 average: 8/8
+[04] |   |   |   |   data merge block 2 104 13 {Text1:'{"text":" ","clickEvent":{"action":"run_command","value":""}}',Text2:'{"text":"Cliquez quand","bold":true,"clickEvent":{"action":"run_command","value":""}}',Text3:'{"text":"tout le monde","bold":true,"clickEvent":{"action":"run_command","value":"/function mk:spawn/start_menu"}}',Text4:'{"text":"est prêt","bold":true,"clickEvent":{"action":"run_command","value":""}}'} total:1248/1248 average: 8/8
+[01] |   nextTickWait total:17430/39545 average: 111/253
+[02] |   |   move total:17252/17252 average: 110/110
+[02] |   |   rest total:4863/4863 average: 31/31
+
+
+-- Counter: getChunkCacheMiss --
+[00] root total:0/58831 average: 0/377
+[01] |   tick total:0/58795 average: 0/376
+[02] |   |   levels total:0/57786 average: 0/370
+[03] |   |   |   ServerLevel[Vide] minecraft:overworld total:0/57786 average: 0/370
+[04] |   |   |   |   tick total:0/57786 average: 0/370
+[05] |   |   |   |   |   chunkSource total:0/52784 average: 0/338
+[06] |   |   |   |   |   |   chunks total:0/52784 average: 0/338
+[07] |   |   |   |   |   |   |   pollingChunks total:0/52784 average: 0/338
+[08] |   |   |   |   |   |   |   |   tickBlocks total:0/47019 average: 0/301
+[09] |   |   |   |   |   |   |   |   |   randomTick total:47019/47019 average: 301/301
+[08] |   |   |   |   |   |   |   |   iceandsnow total:5145/5145 average: 32/32
+[08] |   |   |   |   |   |   |   |   broadcast total:620/620 average: 3/3
+[05] |   |   |   |   |   entities total:0/5002 average: 0/32
+[06] |   |   |   |   |   |   tick total:0/5002 average: 0/32
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:0/4368 average: 0/28
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:4368/4368 average: 28/28
+[07] |   |   |   |   |   |   |   minecraft:painting total:322/322 average: 2/2
+[07] |   |   |   |   |   |   |   minecraft:area_effect_cloud total:0/312 average: 0/2
+[08] |   |   |   |   |   |   |   |   entityBaseTick total:312/312 average: 2/2
+[02] |   |   commandFunctions total:0/624 average: 0/4
+[03] |   |   |   minecraft:tick total:0/624 average: 0/4
+[04] |   |   |   |   execute unless score @r nbr_player = @s nbr_player_kart run data merge block -1 101 2 {Text2:'{"text":"","color":"white","bold":true,"clickEvent":{"action":"run_command","value":""}}'} total:247/247 average: 1/1
+[04] |   |   |   |   execute as @s[scores={choix_mode=0}] at @s run data merge block 2 103 0 {Text2:'{"text":"Mode de jeu","color":"gray","bold":true}',Text3:'{"text":"Grand Prix","color":"yellow","italic":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a choix_mode 1"}}',Text4:'{"text":"→","color":"gray"}'} total:221/221 average: 1/1
+[04] |   |   |   |   data merge block -2 101 -1 {Text2:'{"text":"Valider →","color":"white","bold":true,"clickEvent":{"action":"run_command","value":"/scoreboard players set @a menu 3"}}'} total:156/156 average: 1/1
+[02] |   |   connection total:31/385 average: 0/2
+[03] |   |   |   entityBaseTick total:318/318 average: 2/2
+[03] |   |   |   livingEntityBaseTick total:32/32 average: 0/0
+[03] |   |   |   travel total:0/4 average: 0/0
+[04] |   |   |   |   rest total:3/3 average: 0/0
+[04] |   |   |   |   move total:1/1 average: 0/0
+[01] |   nextTickWait total:11/36 average: 0/0
+[02] |   |   move total:20/20 average: 0/0
+[02] |   |   rest total:5/5 average: 0/0
+
+
+-- Counter: getChunkNow --
+[00] root total:0/162 average: 0/1
+[01] |   nextTickWait total:90/135 average: 0/0
+[02] |   |   rest total:45/45 average: 0/0
+[01] |   tick total:0/27 average: 0/0
+[02] |   |   connection total:0/27 average: 0/0
+[03] |   |   |   travel total:0/27 average: 0/0
+[04] |   |   |   |   rest total:27/27 average: 0/0
+
+
+-- Counter: getEntities --
+[00] root total:0/19484 average: 0/124
+[01] |   tick total:0/18920 average: 0/121
+[02] |   |   levels total:0/15956 average: 0/102
+[03] |   |   |   ServerLevel[Vide] minecraft:overworld total:0/15956 average: 0/102
+[04] |   |   |   |   tick total:0/15956 average: 0/102
+[05] |   |   |   |   |   entities total:0/15956 average: 0/102
+[06] |   |   |   |   |   |   tick total:0/15956 average: 0/102
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:0/14664 average: 0/94
+[08] |   |   |   |   |   |   |   |   push total:14664/14664 average: 94/94
+[07] |   |   |   |   |   |   |   minecraft:painting total:1292/1292 average: 8/8
+[02] |   |   connection total:936/1560 average: 6/10
+[03] |   |   |   travel total:0/312 average: 0/2
+[04] |   |   |   |   move total:312/312 average: 2/2
+[03] |   |   |   push total:312/312 average: 2/2
+[02] |   |   commandFunctions total:0/1404 average: 0/9
+[03] |   |   |   minecraft:tick total:0/1404 average: 0/9
+[04] |   |   |   |   execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick"}]}] at @s positioned ~ ~-0.5 ~ as @e[type=end_crystal,distance=..1] run kill @s total:312/312 average: 2/2
+[04] |   |   |   |   execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick"}]}] at @s positioned ~ ~-0.5 ~ as @e[type=end_crystal,distance=..1] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["spawn_cube_time"],Duration:50} total:312/312 average: 2/2
+[04] |   |   |   |   execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:warped_fungus_on_a_stick"}]}] at @s positioned ~ ~-0.5 ~ if entity @e[type=end_crystal,distance=..1] run function mk:object/random_cube/rand_anim total:312/312 average: 2/2
+[04] |   |   |   |   execute as @a[scores={playermotionX=0,playermotionZ=0}] unless entity @s[scores={confused=1..}] at @s as @e[type=pig,tag=voiture,distance=..1,sort=nearest,limit=1,scores={speed=1..}] run scoreboard players operation @s speed -= @s multiplication total:302/302 average: 1/1
+[04] |   |   |   |   execute at @p as @e[tag=spawn_point,distance=..200] at @e[tag=tp] if score @s spawn_point = @e[tag=tp,sort=nearest,limit=1] number run tp @e[tag=tp,sort=nearest,limit=1] @s total:156/156 average: 1/1
+[04] |   |   |   |   execute as @a unless entity @s[scores={playermotionX=0,playermotionZ=0}] unless entity @s[scores={confused=1..}] at @s as @e[type=pig,tag=voiture,limit=1,sort=nearest,distance=..1] if score @s speed < @p[distance=..1] max_speed run scoreboard players operation @s speed += @p[distance=..1] acceleration total:10/10 average: 0/0
+[01] |   nextTickWait total:282/564 average: 1/3
+[02] |   |   move total:282/282 average: 1/1
+
+
+-- Counter: runTask --
+[00] root total:0/1275 average: 0/8
+[01] |   nextTickWait total:1275/1275 average: 8/8
+
+
+-- Counter: tickNonPassenger --
+[00] root total:0/149448 average: 0/958
+[01] |   tick total:0/149448 average: 0/958
+[02] |   |   levels total:0/149448 average: 0/958
+[03] |   |   |   ServerLevel[Vide] minecraft:overworld total:0/149448 average: 0/958
+[04] |   |   |   |   tick total:0/149448 average: 0/958
+[05] |   |   |   |   |   entities total:0/149448 average: 0/958
+[06] |   |   |   |   |   |   tick total:0/149448 average: 0/958
+[07] |   |   |   |   |   |   |   minecraft:area_effect_cloud total:66924/66924 average: 429/429
+[07] |   |   |   |   |   |   |   minecraft:painting total:65052/65052 average: 417/417
+[07] |   |   |   |   |   |   |   minecraft:armor_stand total:14664/14664 average: 94/94
+[07] |   |   |   |   |   |   |   minecraft:end_crystal total:2496/2496 average: 16/16
+[07] |   |   |   |   |   |   |   minecraft:player total:312/312 average: 2/2
+
+
+--- END COUNTER DUMP ---
+

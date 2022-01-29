@@ -1,0 +1,95 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 8/29/21, 6:41 PM
+Description: Level dump
+
+java.lang.Exception: dummy
+	at abr.a(SourceFile:1226)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:1533)
+	at net.minecraft.server.MinecraftServer.h(SourceFile:1605)
+	at aqu.b(SourceFile:66)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at xm.run(SourceFile:18)
+	at aqu.c(SourceFile:151)
+	at aqy.c(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:783)
+	at net.minecraft.server.MinecraftServer.c(SourceFile:167)
+	at aqu.z(SourceFile:125)
+	at net.minecraft.server.MinecraftServer.bg(SourceFile:765)
+	at net.minecraft.server.MinecraftServer.z(SourceFile:759)
+	at aqu.bq(SourceFile:110)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:743)
+	at net.minecraft.server.MinecraftServer.x(SourceFile:696)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:274)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at abr.a(SourceFile:1226)
+
+-- Affected level --
+Details:
+	All players: 2 total; [abs['JrsArthur'/66759, l='ServerLevel[Vide]', x=982.15, y=105.00, z=1009.48], abs['COOL_BEAR'/84455, l='ServerLevel[Vide]', x=1019.25, y=114.63, z=969.57]]
+	Chunk stats: 5319
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,4,0), Section: (at 0,4,0 in 0,0,0; chunk contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 28922044 game time, 1000 day time
+	Level name: Vide
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: true
+	Level weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+	Known server brands: vanilla
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at abr.a(SourceFile:1226)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:1533)
+	at net.minecraft.server.MinecraftServer.h(SourceFile:1605)
+	at aqu.b(SourceFile:66)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at xm.run(SourceFile:18)
+	at aqu.c(SourceFile:151)
+	at aqy.c(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:783)
+	at net.minecraft.server.MinecraftServer.c(SourceFile:167)
+	at aqu.z(SourceFile:125)
+	at net.minecraft.server.MinecraftServer.bg(SourceFile:765)
+	at net.minecraft.server.MinecraftServer.z(SourceFile:759)
+	at aqu.bq(SourceFile:110)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:743)
+	at net.minecraft.server.MinecraftServer.x(SourceFile:696)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:274)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.17
+	Minecraft Version ID: 1.17
+	Operating System: Linux (amd64) version 4.9.0-15-amd64
+	Java Version: 16.0.1, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
+	Memory: 475862160 bytes (453 MiB) / 866250752 bytes (826 MiB) up to 3113877504 bytes (2969 MiB)
+	CPUs: 2
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 9 3900X 12-Core Processor
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 12
+	Number of logical CPUs: 24
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 163025.94
+	Virtual memory used (MB): 80638.98
+	Swap memory total (MB): 98557.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 3 total; -XX:+UseSerialGC -Xmx3072M -Xms512M

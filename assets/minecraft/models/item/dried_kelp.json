@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/dried_kelp"
+    },
+
+    "display": {
+		"firstperson_righthand": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 0, 0],
+			"scale": [1, 1, 1]
+		}
+	},
+
+    "overrides": [
+	{ "predicate": { "custom_model_data": 0 }, "model": "item/custom/thwomp_open" },
+        { "predicate": { "custom_model_data": 1 }, "model": "item/custom/thwomp_close" }
+	]
+}

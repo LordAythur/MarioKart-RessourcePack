@@ -1,0 +1,19 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/thwomp_open"
+    },
+
+    "display": {
+		"firstperson_righthand": {
+			"rotation": [90, 0, 90],
+			"translation": [4, 14, 0],
+			"scale": [0, 0.2, 0.2]
+		},
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-8, 0, 20],
+			"scale": [10, 10, 10]
+		}
+	}
+}

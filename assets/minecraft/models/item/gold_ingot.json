@@ -1,0 +1,29 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/gold_ingot"
+    },
+
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [0, 0, 0],
+            "translation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        }
+    },
+
+    "overrides": [
+        { "predicate": { "custom_model_data": 1 }, "model": "item/custom/1st" },
+        { "predicate": { "custom_model_data": 2 }, "model": "item/custom/2nd" },
+        { "predicate": { "custom_model_data": 3 }, "model": "item/custom/3rd" },
+        { "predicate": { "custom_model_data": 4 }, "model": "item/custom/4th" },
+        { "predicate": { "custom_model_data": 5 }, "model": "item/custom/5th" },
+        { "predicate": { "custom_model_data": 6 }, "model": "item/custom/6th" },
+        { "predicate": { "custom_model_data": 7 }, "model": "item/custom/7th" },
+        { "predicate": { "custom_model_data": 8 }, "model": "item/custom/8th" },
+
+
+        { "predicate": { "custom_model_data": 9 }, "model": "item/custom/bill_ball" },
+        { "predicate": { "custom_model_data": 10 }, "model": "item/custom/banana" }
+    ]
+}
